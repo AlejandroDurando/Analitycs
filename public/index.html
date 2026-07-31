@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Trends Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              background: '#0B0F19',
+              card: 'rgba(17, 24, 39, 0.7)',
+              cardBorder: 'rgba(255, 255, 255, 0.1)',
+              primary: '#8B5CF6',
+              secondary: '#06B6D4',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0B0F19;
+        color: #F9FAFB;
+        background-image: 
+          radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+          radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.15) 0px, transparent 50%);
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+      .glass-card {
+        background: rgba(17, 24, 39, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 1rem;
+      }
+      .provider-logo {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 12px;
+      }
+      /* Progress bar animation */
+      @keyframes progressFill {
+        from { width: 0; }
+      }
+      .progress-bar-fill {
+        animation: progressFill 1s ease-out forwards;
+      }
+      /* Initial fade in */
+      body {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in forwards;
+      }
+      @keyframes fadeIn {
+        to { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body class="antialiased p-4 sm:p-6 lg:p-8 font-sans selection:bg-primary/30 selection:text-white">
+    
+    <div class="max-w-7xl mx-auto space-y-8 relative">
+      
+      <!-- Header -->
+      <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-white/10 pb-6">
+        <div>
+          <h1 class="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+            AI Trends Dashboard
+          </h1>
+          <p class="text-gray-400 text-sm mt-1 flex items-center gap-2">
+            <i data-lucide="clock" class="w-4 h-4"></i>
+            Actualizado: <span id="last-updated">Cargando...</span>
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-full text-xs font-medium text-primary">
+            <i data-lucide="database" class="w-3.5 h-3.5"></i>
+            Datos: Artificial Analysis
+          </div>
+          <button id="toggle-view" class="p-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-colors" title="Alternar Vista">
+            <i data-lucide="layout-grid" class="w-4 h-4 text-gray-300"></i>
+          </button>
+        </div>
+      </header>
+
+      <main id="dashboard-content" class="space-y-8">
+        
+        <!-- KPIs -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <div class="glass-card p-5 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <i data-lucide="code" class="w-16 h-16 text-primary"></i>
+            </div>
+            <p class="text-sm text-gray-400 font-medium mb-1">Mejor para Código</p>
+            <h3 id="kpi-coding-name" class="text-xl font-bold text-white mb-2 truncate">--</h3>
+            <div class="flex items-center gap-2">
+              <span id="kpi-coding-score" class="text-2xl font-bold text-primary">--</span>
+              <span class="text-xs text-gray-500">Score</span>
+            </div>
+          </div>
+
+          <div class="glass-card p-5 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <i data-lucide="image" class="w-16 h-16 text-secondary"></i>
+            </div>
+            <p class="text-sm text-gray-400 font-medium mb-1">Mejor para Imagen</p>
+            <h3 id="kpi-image-name" class="text-xl font-bold text-white mb-2 truncate">--</h3>
+            <div class="flex items-center gap-2">
+              <span id="kpi-image-score" class="text-2xl font-bold text-secondary">--</span>
+              <span class="text-xs text-gray-500">Elo</span>
+            </div>
+          </div>
+
+          <div class="glass-card p-5 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <i data-lucide="zap" class="w-16 h-16 text-emerald-400"></i>
+            </div>
+            <p class="text-sm text-gray-400 font-medium mb-1">Mejor Calidad/Precio</p>
+            <h3 id="kpi-value-name" class="text-xl font-bold text-white mb-2 truncate">--</h3>
+            <div class="flex items-center gap-2">
+              <span id="kpi-value-score" class="text-2xl font-bold text-emerald-400">--</span>
+              <span class="text-xs text-gray-500">Idx/$</span>
+            </div>
+          </div>
+
+          <div class="glass-card p-5 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <i data-lucide="sparkles" class="w-16 h-16 text-amber-400"></i>
+            </div>
+            <p class="text-sm text-gray-400 font-medium mb-1">Modelos Nuevos</p>
+            <h3 class="text-xl font-bold text-white mb-2 truncate">Esta semana</h3>
+            <div class="flex items-center gap-2">
+              <span id="kpi-new-models" class="text-2xl font-bold text-amber-400">--</span>
+              <span class="text-xs text-gray-500">Lanzamientos</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Gemini Analysis -->
+        <section class="glass-card p-6 border-l-4 border-l-primary relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-50"></div>
+          <div class="flex items-start gap-4">
+            <div class="mt-1 flex-shrink-0 bg-primary/20 p-2 rounded-lg border border-primary/30">
+              <i data-lucide="bot" class="w-6 h-6 text-primary"></i>
+            </div>
+            <div class="space-y-4 flex-1">
+              <div>
+                <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+                  Tendencias de Hoy <span class="text-xs font-normal text-gray-400 bg-white/5 px-2 py-0.5 rounded">Generado por Gemini</span>
+                </h2>
+                <p id="gemini-trends" class="text-gray-300 text-sm leading-relaxed mt-2 max-w-4xl">
+                  Cargando análisis...
+                </p>
+              </div>
+              <div class="pt-4 border-t border-white/5">
+                <h3 class="text-sm font-medium text-white mb-2">Recomendaciones:</h3>
+                <p id="gemini-recommendations" class="text-gray-400 text-sm italic">
+                  Cargando...
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Comparative Fixed Cards -->
+        <section id="comparative-section">
+          <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+            <i data-lucide="swords" class="w-5 h-5 text-gray-400"></i> Mi Comparativa: Frontier vs Open Source
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <div class="glass-card p-5 border-t-2 border-t-orange-500">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Anthropic</p>
+                  <h3 id="comp-anthropic-name" class="text-lg font-bold text-white truncate">--</h3>
+                </div>
+                <div class="provider-logo bg-orange-500/20 text-orange-500 border border-orange-500/30">A</div>
+              </div>
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between items-center"><span class="text-gray-400">Inteligencia:</span> <span id="comp-anthropic-int" class="font-medium text-white">--</span></div>
+                <div class="flex justify-between items-center"><span class="text-gray-400">Código:</span> <span id="comp-anthropic-cod" class="font-medium text-white">--</span></div>
+                <div class="flex justify-between items-center"><span class="text-gray-400">Precio/1M:</span> <span id="comp-anthropic-pri" class="font-medium text-white">--</span></div>
+              </div>
+            </div>
+
+            <div class="glass-card p-5 border-t-2 border-t-blue-500 relative">
+              <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                Value
+              </div>
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Google</p>
+                  <h3 id="comp-google-name" class="text-lg font-bold text-white truncate">--</h3>
+                </div>
+                <div class="provider-logo bg-blue-500/20 text-blue-500 border border-blue-500/30">G</div>
+              </div>
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between items-center"><span class="text-gray-400">Inteligencia:</span> <span id="comp-google-int" class="font-medium text-white">--</span></div>
+                <div class="flex justify-between items-center"><span class="text-gray-400">Código:</span> <span id="comp-google-cod" class="font-medium text-white">--</span></div>
+                <div class="flex justify-between items-center"><span class="text-gray-400">Precio/1M:</span> <span id="comp-google-pri" class="font-medium text-white">--</span></div>
+              </div>
+            </div>
+
+            <div class="glass-card p-5 border-t-2 border-t-purple-500">
+              <div class="flex justify-between items-start mb-4">
+                <div>
+                  <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Open Source (Mejor)</p>
+                  <h3 id="comp-open-name" class="text-lg font-bold text-white truncate">--</h3>
+                </div>
+                <div class="provider-logo bg-purple-500/20 text-purple-500 border border-purple-500/30">O</div>
+              </div>
+              <div class="space-y-3 text-sm">
+                <div class="flex justify-between items-center"><span class="text-gray-400">Inteligencia:</span> <span id="comp-open-int" class="font-medium text-white">--</span></div>
+                <div class="flex justify-between items-center"><span class="text-gray-400">Código:</span> <span id="comp-open-cod" class="font-medium text-white">--</span></div>
+                <div class="flex justify-between items-center"><span class="text-gray-400">Precio/1M:</span> <span id="comp-open-pri" class="font-medium text-white">--</span></div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Rankings Grid -->
+        <div id="full-view-section" class="grid grid-cols-1 xl:grid-cols-2 gap-6">
+          
+          <!-- Coding -->
+          <div class="glass-card p-5">
+            <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2 border-b border-white/5 pb-3">
+              <i data-lucide="terminal" class="w-5 h-5 text-primary"></i> Mejores para Programar
+            </h2>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm text-left">
+                <thead class="text-xs text-gray-400 uppercase bg-white/5 rounded-t-lg">
+                  <tr>
+                    <th class="px-4 py-3 rounded-tl-lg">Modelo</th>
+                    <th class="px-4 py-3">Score</th>
+                    <th class="px-4 py-3">$/1M</th>
+                    <th class="px-4 py-3 text-right rounded-tr-lg">Tendencia</th>
+                  </tr>
+                </thead>
+                <tbody id="table-coding" class="divide-y divide-white/5">
+                  <!-- Filled by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Intelligence -->
+          <div class="glass-card p-5">
+            <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2 border-b border-white/5 pb-3">
+              <i data-lucide="brain" class="w-5 h-5 text-secondary"></i> Inteligencia General
+            </h2>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm text-left">
+                <thead class="text-xs text-gray-400 uppercase bg-white/5 rounded-t-lg">
+                  <tr>
+                    <th class="px-4 py-3 rounded-tl-lg">Modelo</th>
+                    <th class="px-4 py-3">Score</th>
+                    <th class="px-4 py-3">$/1M</th>
+                    <th class="px-4 py-3 text-right rounded-tr-lg">Tendencia</th>
+                  </tr>
+                </thead>
+                <tbody id="table-intelligence" class="divide-y divide-white/5">
+                  <!-- Filled by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="glass-card p-5">
+            <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2 border-b border-white/5 pb-3">
+              <i data-lucide="palette" class="w-5 h-5 text-pink-400"></i> Mejores para Diseño (Elo)
+            </h2>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm text-left">
+                <thead class="text-xs text-gray-400 uppercase bg-white/5 rounded-t-lg">
+                  <tr>
+                    <th class="px-4 py-3 rounded-tl-lg">Modelo</th>
+                    <th class="px-4 py-3">Elo</th>
+                    <th class="px-4 py-3">$/img</th>
+                    <th class="px-4 py-3 text-right rounded-tr-lg">Tendencia</th>
+                  </tr>
+                </thead>
+                <tbody id="table-image" class="divide-y divide-white/5">
+                  <!-- Filled by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Value -->
+          <div class="glass-card p-5">
+            <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2 border-b border-white/5 pb-3">
+              <i data-lucide="badge-dollar-sign" class="w-5 h-5 text-emerald-400"></i> Mejor Calidad-Precio
+            </h2>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm text-left">
+                <thead class="text-xs text-gray-400 uppercase bg-white/5 rounded-t-lg">
+                  <tr>
+                    <th class="px-4 py-3 rounded-tl-lg">Modelo</th>
+                    <th class="px-4 py-3">Idx/$</th>
+                    <th class="px-4 py-3">$/1M</th>
+                    <th class="px-4 py-3 text-right rounded-tr-lg">Tendencia</th>
+                  </tr>
+                </thead>
+                <tbody id="table-value" class="divide-y divide-white/5">
+                  <!-- Filled by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <footer class="mt-12 border-t border-white/10 pt-6 pb-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <p>Dashboard de Tendencias de IA Estático. Generado vía GitHub Actions.</p>
+        <p>Datos provistos por <a href="https://artificialanalysis.ai" target="_blank" class="text-gray-400 hover:text-white transition-colors underline decoration-white/20 underline-offset-2">Artificial Analysis</a> bajo licencia.</p>
+      </footer>
+
+    </div>
+
+    <!-- Application Script -->
+    <script src="/app.js"></script>
+    <script>
+      // Initialize icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
+

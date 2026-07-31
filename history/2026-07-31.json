@@ -1,0 +1,327 @@
+{
+  "lastUpdated": "2026-07-31T02:36:28.546Z",
+  "kpis": {
+    "bestCodingModel": {
+      "name": "GPT-5.6 Sol (xhigh)",
+      "provider": "OpenAI",
+      "score": 78.3,
+      "price": 11.25,
+      "speed": 61,
+      "delta": "-"
+    },
+    "bestImageModel": {
+      "name": "GPT Image 2 (high)",
+      "provider": "OpenAI",
+      "score": 1340,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    "bestValueModel": {
+      "name": "Qwen3.5 4B (Reasoning)",
+      "provider": "Alibaba",
+      "score": 335,
+      "price": 0.06,
+      "speed": 18,
+      "delta": "-"
+    },
+    "newModelsThisWeek": 35
+  },
+  "codingModels": [
+    {
+      "name": "GPT-5.6 Sol (xhigh)",
+      "provider": "OpenAI",
+      "score": 78.3,
+      "price": 11.25,
+      "speed": 61,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+      "provider": "Anthropic",
+      "score": 78,
+      "price": 10,
+      "speed": 55,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Sol (max)",
+      "provider": "OpenAI",
+      "score": 77.4,
+      "price": 11.25,
+      "speed": 67,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Sol (high)",
+      "provider": "OpenAI",
+      "score": 77.2,
+      "price": 11.25,
+      "speed": 56,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+      "provider": "Anthropic",
+      "score": 77,
+      "price": 10,
+      "speed": 53,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Terra (max)",
+      "provider": "OpenAI",
+      "score": 76.7,
+      "price": 4.5,
+      "speed": 135,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+      "provider": "Anthropic",
+      "score": 76.5,
+      "price": 20,
+      "speed": 58,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+      "provider": "Anthropic",
+      "score": 76.5,
+      "price": 10,
+      "speed": 52,
+      "delta": "-"
+    }
+  ],
+  "imageModels": [
+    {
+      "name": "GPT Image 2 (high)",
+      "provider": "OpenAI",
+      "score": 1340,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Reve 2.1",
+      "provider": "Reve",
+      "score": 1300,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "MAI-Image-2.5",
+      "provider": "Microsoft AI",
+      "score": 1270,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+      "provider": "Google",
+      "score": 1264,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
+      "provider": "Google",
+      "score": 1264,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "GPT Image 1.5 (high)",
+      "provider": "OpenAI",
+      "score": 1264,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Riverflow 2.0",
+      "provider": "Sourceful",
+      "score": 1254,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "HiDream-O1-Image-1.5",
+      "provider": "HiDream",
+      "score": 1246,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    }
+  ],
+  "intelligenceModels": [
+    {
+      "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+      "provider": "Anthropic",
+      "score": 60.7,
+      "price": 10,
+      "speed": 55,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+      "provider": "Anthropic",
+      "score": 60.1,
+      "price": 10,
+      "speed": 53,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+      "provider": "Anthropic",
+      "score": 59.9,
+      "price": 20,
+      "speed": 58,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Sol (max)",
+      "provider": "OpenAI",
+      "score": 58.9,
+      "price": 11.25,
+      "speed": 67,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+      "provider": "Anthropic",
+      "score": 58.9,
+      "price": 10,
+      "speed": 52,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Sol (xhigh)",
+      "provider": "OpenAI",
+      "score": 57.7,
+      "price": 11.25,
+      "speed": 61,
+      "delta": "-"
+    },
+    {
+      "name": "Kimi K3",
+      "provider": "Kimi",
+      "score": 57.1,
+      "price": 6,
+      "speed": 32,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
+      "provider": "Anthropic",
+      "score": 56.3,
+      "price": 10,
+      "speed": 53,
+      "delta": "-"
+    }
+  ],
+  "valueModels": [
+    {
+      "name": "Qwen3.5 4B (Reasoning)",
+      "provider": "Alibaba",
+      "score": 335,
+      "price": 0.06,
+      "speed": 18,
+      "delta": "-"
+    },
+    {
+      "name": "Hy3-preview (Reasoning)",
+      "provider": "Tencent",
+      "score": 314,
+      "price": 0.11,
+      "speed": 169,
+      "delta": "-"
+    },
+    {
+      "name": "Gemma 4 E4B (Reasoning)",
+      "provider": "Google",
+      "score": 305,
+      "price": 0.04,
+      "speed": 106,
+      "delta": "-"
+    },
+    {
+      "name": "HyperNova 60B 2605",
+      "provider": "Multiverse Computing",
+      "score": 273.8,
+      "price": 0.07,
+      "speed": 418,
+      "delta": "-"
+    },
+    {
+      "name": "Qwen3.5 4B (Non-reasoning)",
+      "provider": "Alibaba",
+      "score": 266.7,
+      "price": 0.06,
+      "speed": 16,
+      "delta": "-"
+    },
+    {
+      "name": "Hy3-preview (Non-reasoning)",
+      "provider": "Tencent",
+      "score": 243.9,
+      "price": 0.11,
+      "speed": 144,
+      "delta": "-"
+    },
+    {
+      "name": "DeepSeek V4 Flash (Reasoning, Max Effort)",
+      "provider": "DeepSeek",
+      "score": 230.3,
+      "price": 0.18,
+      "speed": 112,
+      "delta": "-"
+    },
+    {
+      "name": "Gemma 4 E4B (Non-reasoning)",
+      "provider": "Google",
+      "score": 222.5,
+      "price": 0.04,
+      "speed": 109,
+      "delta": "-"
+    }
+  ],
+  "comparative": {
+    "anthropic": {
+      "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+      "metrics": {
+        "intelligence": 61,
+        "coding": 78,
+        "speed": 55,
+        "price": 10
+      }
+    },
+    "google": {
+      "name": "Gemini 3.5 Flash (high)",
+      "metrics": {
+        "intelligence": 50,
+        "coding": 70,
+        "speed": 220,
+        "price": 3.38
+      }
+    },
+    "openSource": {
+      "name": "Muse Spark 1.1 (xhigh)",
+      "metrics": {
+        "intelligence": 51,
+        "coding": 71,
+        "speed": 135,
+        "price": 2
+      }
+    }
+  },
+  "geminiAnalysis": {
+    "trends": "La API de Gemini no está configurada, por lo que este es un análisis de marcador de posición. Configura GEMINI_API_KEY en tus secretos de GitHub para ver el análisis real.",
+    "recommendations": "Sin recomendaciones disponibles por falta de API key de Gemini."
+  }
+}
