@@ -45,30 +45,6 @@
       "delta": "-"
     },
     {
-      "name": "GPT-5.6 Sol (max)",
-      "provider": "OpenAI",
-      "score": 77.4,
-      "price": 11.25,
-      "speed": 67,
-      "delta": "-"
-    },
-    {
-      "name": "GPT-5.6 Sol (high)",
-      "provider": "OpenAI",
-      "score": 77.2,
-      "price": 11.25,
-      "speed": 56,
-      "delta": "-"
-    },
-    {
-      "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
-      "provider": "Anthropic",
-      "score": 77,
-      "price": 10,
-      "speed": 53,
-      "delta": "-"
-    },
-    {
       "name": "GPT-5.6 Terra (max)",
       "provider": "OpenAI",
       "score": 76.7,
@@ -82,14 +58,6 @@
       "score": 76.5,
       "price": 20,
       "speed": 58,
-      "delta": "-"
-    },
-    {
-      "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-      "provider": "Anthropic",
-      "score": 76.5,
-      "price": 10,
-      "speed": 52,
       "delta": "-"
     }
   ],
@@ -169,14 +137,6 @@
       "delta": "-"
     },
     {
-      "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
-      "provider": "Anthropic",
-      "score": 60.1,
-      "price": 10,
-      "speed": 53,
-      "delta": "-"
-    },
-    {
       "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
       "provider": "Anthropic",
       "score": 59.9,
@@ -193,35 +153,11 @@
       "delta": "-"
     },
     {
-      "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-      "provider": "Anthropic",
-      "score": 58.9,
-      "price": 10,
-      "speed": 52,
-      "delta": "-"
-    },
-    {
-      "name": "GPT-5.6 Sol (xhigh)",
-      "provider": "OpenAI",
-      "score": 57.7,
-      "price": 11.25,
-      "speed": 61,
-      "delta": "-"
-    },
-    {
       "name": "Kimi K3",
       "provider": "Kimi",
       "score": 57.1,
       "price": 6,
       "speed": 32,
-      "delta": "-"
-    },
-    {
-      "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
-      "provider": "Anthropic",
-      "score": 56.3,
-      "price": 10,
-      "speed": 53,
       "delta": "-"
     }
   ],
@@ -259,35 +195,11 @@
       "delta": "-"
     },
     {
-      "name": "Qwen3.5 4B (Non-reasoning)",
-      "provider": "Alibaba",
-      "score": 266.7,
-      "price": 0.06,
-      "speed": 16,
-      "delta": "-"
-    },
-    {
-      "name": "Hy3-preview (Non-reasoning)",
-      "provider": "Tencent",
-      "score": 243.9,
-      "price": 0.11,
-      "speed": 144,
-      "delta": "-"
-    },
-    {
       "name": "DeepSeek V4 Flash (Reasoning, Max Effort)",
       "provider": "DeepSeek",
       "score": 230.3,
       "price": 0.18,
       "speed": 112,
-      "delta": "-"
-    },
-    {
-      "name": "Gemma 4 E4B (Non-reasoning)",
-      "provider": "Google",
-      "score": 222.5,
-      "price": 0.04,
-      "speed": 109,
       "delta": "-"
     }
   ],
