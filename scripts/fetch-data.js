@@ -12,6 +12,9 @@ const __dirname = path.dirname(__filename);
 
 const AA_API_KEY = process.env.AA_API_KEY;
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+// Modelo de Gemini para el análisis. Configurable vía secret/variable
+// GEMINI_MODEL por si el modelo por defecto se descontinúa.
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-flash-latest';
 const HISTORY_DIR = path.join(__dirname, '../history');
 const PUBLIC_DIR = path.join(__dirname, '../public');
 
@@ -75,7 +78,7 @@ async function analyzeWithGemini(data) {
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: GEMINI_MODEL,
       contents: prompt,
       config: {
         responseMimeType: 'application/json'
