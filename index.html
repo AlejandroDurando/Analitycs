@@ -1,349 +1,592 @@
 <!doctype html>
-<html lang="es" class="dark">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Trends Dashboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              background: '#0B0F19',
-              card: 'rgba(17, 24, 39, 0.7)',
-              cardBorder: 'rgba(255, 255, 255, 0.1)',
-              primary: '#8B5CF6',
-              secondary: '#06B6D4',
-            }
-          }
-        }
-      }
-    </script>
+    <title>Reporte Diario de IA — Análisis de Modelos</title>
+    <meta name="description" content="Reporte editorial diario del mercado de modelos de Inteligencia Artificial, con datos de Artificial Analysis." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     <style>
+      :root {
+        --paper: #f3efe4;
+        --paper-2: #eae4d5;
+        --ink: #1b1913;
+        --ink-soft: #4a463c;
+        --ink-mute: #837b68;
+        --line: rgba(27, 25, 19, 0.16);
+        --line-strong: rgba(27, 25, 19, 0.42);
+
+        /* Signature accents per section */
+        --coding: #c33f27;
+        --intel: #274b78;
+        --value: #2e6b45;
+        --image: #8a3a66;
+        --brand: #c33f27;
+
+        --shadow: 0 1px 0 rgba(27, 25, 19, 0.05), 0 18px 40px -28px rgba(27, 25, 19, 0.5);
+        --radius: 3px;
+        --font-display: "Fraunces", Georgia, serif;
+        --font-body: "Archivo", system-ui, sans-serif;
+        --font-mono: "JetBrains Mono", ui-monospace, monospace;
+      }
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      html { -webkit-text-size-adjust: 100%; }
+
       body {
-        background-color: #0B0F19;
-        color: #F9FAFB;
-        background-image: 
-          radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
-          radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.15) 0px, transparent 50%);
-        background-attachment: fixed;
+        font-family: var(--font-body);
+        color: var(--ink);
+        background-color: var(--paper);
+        line-height: 1.5;
         min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
       }
-      .glass-card {
-        background: rgba(17, 24, 39, 0.6);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 1rem;
+
+      /* Paper grain + faint vignette */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
+        mix-blend-mode: multiply;
       }
-      .provider-logo {
-        width: 24px;
-        height: 24px;
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        background:
+          radial-gradient(120% 80% at 50% -10%, rgba(195, 63, 39, 0.06), transparent 60%),
+          radial-gradient(100% 60% at 100% 100%, rgba(39, 75, 120, 0.05), transparent 55%);
+      }
+
+      .wrap {
+        position: relative;
+        z-index: 1;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: clamp(1.1rem, 3vw, 2.4rem);
+      }
+
+      ::selection { background: var(--brand); color: var(--paper); }
+
+      /* ---------- Masthead ---------- */
+      .masthead { border-bottom: 3px double var(--line-strong); padding-bottom: 1.1rem; }
+      .masthead__meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 0.4rem 1rem;
+        font-family: var(--font-mono);
+        font-size: 0.66rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-mute);
+        padding-bottom: 0.9rem;
+      }
+      .masthead__meta .dot { color: var(--brand); }
+      .masthead__title {
+        font-family: var(--font-display);
+        font-weight: 900;
+        font-optical-sizing: auto;
+        line-height: 0.94;
+        letter-spacing: -0.02em;
+        font-size: clamp(2.5rem, 8.5vw, 6.2rem);
+        margin: 0.2rem 0 0.55rem;
+      }
+      .masthead__title em {
+        font-style: italic;
+        font-weight: 400;
+        color: var(--brand);
+      }
+      .masthead__sub {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 0.3rem 1rem;
+        border-top: 1px solid var(--line);
+        padding-top: 0.7rem;
+      }
+      .masthead__sub p { font-size: 0.9rem; color: var(--ink-soft); max-width: 44ch; }
+      .badge {
+        font-family: var(--font-mono);
+        font-size: 0.66rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--ink);
+        border: 1px solid var(--line-strong);
+        padding: 0.28rem 0.6rem;
+        border-radius: 100px;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+      .badge .pulse {
+        width: 6px; height: 6px; border-radius: 50%;
+        background: var(--value);
+        box-shadow: 0 0 0 0 rgba(46, 107, 69, 0.5);
+        animation: pulse 2.4s infinite;
+      }
+      @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(46, 107, 69, 0.5); }
+        70% { box-shadow: 0 0 0 7px rgba(46, 107, 69, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(46, 107, 69, 0); }
+      }
+
+      /* ---------- Section headers ---------- */
+      .sec-head {
+        display: flex;
+        align-items: baseline;
+        gap: 0.8rem;
+        margin: 2.8rem 0 1.2rem;
+      }
+      .sec-head .idx {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        color: var(--brand);
+        letter-spacing: 0.1em;
+        padding-top: 0.15rem;
+      }
+      .sec-head h2 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: clamp(1.3rem, 3vw, 1.7rem);
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+      }
+      .sec-head .rule { flex: 1; height: 1px; background: var(--line); align-self: center; }
+      .sec-head .note {
+        font-family: var(--font-mono);
+        font-size: 0.64rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-mute);
+        white-space: nowrap;
+      }
+
+      /* ---------- Leads (KPI headlines) ---------- */
+      .leads {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        margin-top: 1.6rem;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .lead {
+        padding: 1.15rem 1.15rem 1.25rem;
+        border-left: 1px solid var(--line);
+        position: relative;
+        overflow: hidden;
+      }
+      .lead:first-child { border-left: none; }
+      .lead__kicker {
+        font-family: var(--font-mono);
+        font-size: 0.62rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent, var(--ink-mute));
         display: flex;
         align-items: center;
-        justify-content: center;
-        border-radius: 6px;
+        gap: 0.45rem;
+        margin-bottom: 0.7rem;
+      }
+      .lead__kicker::before {
+        content: "";
+        width: 14px; height: 2px;
+        background: var(--accent, var(--ink-mute));
+        display: inline-block;
+      }
+      .lead__value {
+        font-family: var(--font-display);
+        font-weight: 900;
+        font-size: clamp(2rem, 5vw, 2.9rem);
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+      }
+      .lead__value .unit {
+        font-family: var(--font-mono);
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: var(--ink-mute);
+        letter-spacing: 0.05em;
+        margin-left: 0.35rem;
+        vertical-align: 0.55em;
+      }
+      .lead__name {
+        margin-top: 0.55rem;
+        font-size: 0.86rem;
         font-weight: 600;
-        font-size: 12px;
+        color: var(--ink-soft);
+        line-height: 1.25;
       }
-      /* Progress bar animation */
-      @keyframes progressFill {
-        from { width: 0; }
+      .lead__name span { display: block; font-weight: 400; font-size: 0.74rem; color: var(--ink-mute); margin-top: 0.1rem; }
+
+      /* ---------- Charts ---------- */
+      .charts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.6rem 2.6rem;
       }
-      .progress-bar-fill {
-        animation: progressFill 1s ease-out forwards;
+      .chart { --accent: var(--ink); }
+      .chart--coding { --accent: var(--coding); }
+      .chart--intel { --accent: var(--intel); }
+      .chart--value { --accent: var(--value); }
+      .chart--image { --accent: var(--image); }
+
+      .chart__title {
+        display: flex;
+        align-items: baseline;
+        gap: 0.6rem;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 0.55rem;
+        margin-bottom: 0.4rem;
       }
-      /* Initial fade in */
-      body {
+      .chart__title h3 {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 1.12rem;
+        letter-spacing: -0.01em;
+      }
+      .chart__title .metric {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--ink-mute);
+        margin-left: auto;
+      }
+
+      .bar-row {
+        display: grid;
+        grid-template-columns: 1.6rem minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 0.7rem;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid var(--line);
         opacity: 0;
-        animation: fadeIn 0.5s ease-in forwards;
+        transform: translateY(6px);
+        animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+        animation-delay: var(--delay, 0s);
       }
-      @keyframes fadeIn {
-        to { opacity: 1; }
+      .bar-row:last-child { border-bottom: none; }
+      @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+      .bar-rank {
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--ink-mute);
+        text-align: right;
+      }
+      .bar-row--lead .bar-rank { color: var(--accent); }
+
+      .bar-main { min-width: 0; }
+      .bar-name {
+        font-size: 0.86rem;
+        font-weight: 600;
+        color: var(--ink);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+      }
+      .bar-provider {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-mute);
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        margin-top: 0.12rem;
+      }
+      .bar-provider .pdot { width: 6px; height: 6px; border-radius: 50%; background: var(--pc, var(--ink-mute)); flex: none; }
+      .bar-track {
+        grid-column: 2 / 3;
+        height: 8px;
+        background: var(--paper-2);
+        border-radius: 2px;
+        overflow: hidden;
+        margin-top: 0.4rem;
+      }
+      .bar-fill {
+        height: 100%;
+        width: 0;
+        background: var(--accent);
+        border-radius: 2px;
+        transform-origin: left;
+        animation: grow 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        animation-delay: var(--delay, 0s);
+      }
+      .bar-row--lead .bar-fill { background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 70%, var(--ink))); }
+      @keyframes grow { to { width: var(--w, 0%); } }
+
+      .bar-value {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+        font-family: var(--font-mono);
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: var(--ink);
+        text-align: right;
+        align-self: center;
+        font-variant-numeric: tabular-nums;
+      }
+      .bar-value small { display: block; font-weight: 400; font-size: 0.62rem; color: var(--ink-mute); }
+
+      /* ---------- Analysis (editorial column) ---------- */
+      .analysis {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        gap: 2.4rem;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 1.6rem 0 1.9rem;
+      }
+      .analysis__lead p {
+        font-family: var(--font-display);
+        font-weight: 400;
+        font-size: clamp(1.05rem, 2.1vw, 1.35rem);
+        line-height: 1.5;
+        color: var(--ink);
+      }
+      .analysis__lead > p:first-of-type::first-letter {
+        float: left;
+        font-weight: 900;
+        font-size: 3.6em;
+        line-height: 0.78;
+        padding: 0.06em 0.12em 0 0;
+        color: var(--brand);
+      }
+      .analysis__aside h4 {
+        font-family: var(--font-mono);
+        font-size: 0.66rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--brand);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.7rem;
+      }
+      .analysis__aside p { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.65; }
+      .analysis__lead p.byline {
+        font-family: var(--font-mono);
+        font-size: 0.64rem;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-mute);
+        margin-top: 1.1rem;
+      }
+      .analysis__lead p.byline::first-letter { font-size: inherit; float: none; color: inherit; font-weight: 400; padding: 0; }
+      .byline b { color: var(--ink-soft); font-weight: 600; }
+
+      /* ---------- Matchup ---------- */
+      .matchup { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+      .team {
+        border: 1px solid var(--line-strong);
+        border-radius: var(--radius);
+        padding: 1.2rem;
+        background: linear-gradient(180deg, rgba(255,255,255,0.35), transparent);
+        position: relative;
+      }
+      .team::before {
+        content: "";
+        position: absolute; top: 0; left: 0; right: 0; height: 3px;
+        background: var(--tc, var(--ink));
+        border-radius: var(--radius) var(--radius) 0 0;
+      }
+      .team__label {
+        font-family: var(--font-mono);
+        font-size: 0.62rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--tc, var(--ink-mute));
+        margin-bottom: 0.3rem;
+      }
+      .team__name { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; line-height: 1.15; margin-bottom: 0.9rem; }
+      .team__row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.42rem 0; border-top: 1px solid var(--line); }
+      .team__row span { font-size: 0.8rem; color: var(--ink-mute); }
+      .team__row b { font-family: var(--font-mono); font-weight: 700; font-size: 0.92rem; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+      /* ---------- Footer ---------- */
+      footer {
+        margin-top: 3rem;
+        border-top: 3px double var(--line-strong);
+        padding: 1.2rem 0 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+        font-family: var(--font-mono);
+        font-size: 0.64rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--ink-mute);
+      }
+      footer a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--line-strong); }
+      footer a:hover { color: var(--brand); border-color: var(--brand); }
+
+      /* ---------- Reveal ---------- */
+      .reveal { opacity: 0; transform: translateY(10px); animation: rise 0.6s ease forwards; }
+
+      /* ---------- Responsive ---------- */
+      @media (max-width: 860px) {
+        .leads { grid-template-columns: 1fr 1fr; }
+        .lead:nth-child(3) { border-left: none; }
+        .lead:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+        .charts { grid-template-columns: 1fr; gap: 2.2rem; }
+        .analysis { grid-template-columns: 1fr; gap: 1.4rem; }
+        .matchup { grid-template-columns: 1fr; }
+      }
+      @media (max-width: 480px) {
+        .leads { grid-template-columns: 1fr; }
+        .lead { border-left: none; border-bottom: 1px solid var(--line); }
+        .lead:last-child { border-bottom: none; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation-duration: 0.001s !important; animation-delay: 0s !important; }
+        .bar-fill { width: var(--w, 0%); }
       }
     </style>
   </head>
-  <body class="antialiased p-4 sm:p-6 lg:p-8 font-sans selection:bg-primary/30 selection:text-white">
-    
-    <div class="max-w-7xl mx-auto space-y-8 relative">
-      
-      <!-- Header -->
-      <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-white/10 pb-6">
-        <div>
-          <h1 class="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
-            AI Trends Dashboard
-          </h1>
-          <p class="text-gray-400 text-sm mt-1 flex items-center gap-2">
-            <i data-lucide="clock" class="w-4 h-4"></i>
-            Actualizado: <span id="last-updated">Cargando...</span>
-          </p>
+  <body>
+    <div class="wrap">
+      <!-- ============ MASTHEAD ============ -->
+      <header class="masthead">
+        <div class="masthead__meta">
+          <span>Edición Diaria <span class="dot">◆</span> No. <span id="edition">—</span></span>
+          <span id="dateline">—</span>
+          <span>Fuente · Artificial Analysis</span>
         </div>
-        <div class="flex items-center gap-3">
-          <div class="flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-full text-xs font-medium text-primary">
-            <i data-lucide="database" class="w-3.5 h-3.5"></i>
-            Datos: Artificial Analysis
-          </div>
-          <button id="toggle-view" class="p-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-colors" title="Alternar Vista">
-            <i data-lucide="layout-grid" class="w-4 h-4 text-gray-300"></i>
-          </button>
+        <h1 class="masthead__title">El Reporte<br />de <em>Inteligencia</em></h1>
+        <div class="masthead__sub">
+          <p>Panorama diario del mercado de modelos de IA: quién lidera en código, razonamiento, diseño y relación calidad-precio.</p>
+          <span class="badge"><span class="pulse"></span>Actualizado <span id="last-updated">—</span></span>
         </div>
       </header>
 
-      <main id="dashboard-content" class="space-y-8">
-        
-        <!-- KPIs -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          
-          <div class="glass-card p-5 relative overflow-hidden group">
-            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-              <i data-lucide="code" class="w-16 h-16 text-primary"></i>
-            </div>
-            <p class="text-sm text-gray-400 font-medium mb-1">Mejor para Código</p>
-            <h3 id="kpi-coding-name" class="text-xl font-bold text-white mb-2 truncate">--</h3>
-            <div class="flex items-center gap-2">
-              <span id="kpi-coding-score" class="text-2xl font-bold text-primary">--</span>
-              <span class="text-xs text-gray-500">Score</span>
-            </div>
-          </div>
-
-          <div class="glass-card p-5 relative overflow-hidden group">
-            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-              <i data-lucide="image" class="w-16 h-16 text-secondary"></i>
-            </div>
-            <p class="text-sm text-gray-400 font-medium mb-1">Mejor para Imagen</p>
-            <h3 id="kpi-image-name" class="text-xl font-bold text-white mb-2 truncate">--</h3>
-            <div class="flex items-center gap-2">
-              <span id="kpi-image-score" class="text-2xl font-bold text-secondary">--</span>
-              <span class="text-xs text-gray-500">Elo</span>
-            </div>
-          </div>
-
-          <div class="glass-card p-5 relative overflow-hidden group">
-            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-              <i data-lucide="zap" class="w-16 h-16 text-emerald-400"></i>
-            </div>
-            <p class="text-sm text-gray-400 font-medium mb-1">Mejor Calidad/Precio</p>
-            <h3 id="kpi-value-name" class="text-xl font-bold text-white mb-2 truncate">--</h3>
-            <div class="flex items-center gap-2">
-              <span id="kpi-value-score" class="text-2xl font-bold text-emerald-400">--</span>
-              <span class="text-xs text-gray-500">Idx/$</span>
-            </div>
-          </div>
-
-          <div class="glass-card p-5 relative overflow-hidden group">
-            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-              <i data-lucide="sparkles" class="w-16 h-16 text-amber-400"></i>
-            </div>
-            <p class="text-sm text-gray-400 font-medium mb-1">Modelos Nuevos</p>
-            <h3 class="text-xl font-bold text-white mb-2 truncate">Esta semana</h3>
-            <div class="flex items-center gap-2">
-              <span id="kpi-new-models" class="text-2xl font-bold text-amber-400">--</span>
-              <span class="text-xs text-gray-500">Lanzamientos</span>
-            </div>
-          </div>
-
+      <!-- ============ LEADS ============ -->
+      <div class="leads reveal" style="animation-delay: 0.05s">
+        <div class="lead" style="--accent: var(--coding)">
+          <div class="lead__kicker">Rey del código</div>
+          <div class="lead__value" id="kpi-coding-score">—</div>
+          <div class="lead__name" id="kpi-coding-name">—<span id="kpi-coding-provider"></span></div>
         </div>
-
-        <!-- Gemini Analysis -->
-        <section class="glass-card p-6 border-l-4 border-l-primary relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-50"></div>
-          <div class="flex items-start gap-4">
-            <div class="mt-1 flex-shrink-0 bg-primary/20 p-2 rounded-lg border border-primary/30">
-              <i data-lucide="bot" class="w-6 h-6 text-primary"></i>
-            </div>
-            <div class="space-y-4 flex-1">
-              <div>
-                <h2 class="text-lg font-semibold text-white flex items-center gap-2">
-                  Tendencias de Hoy <span class="text-xs font-normal text-gray-400 bg-white/5 px-2 py-0.5 rounded">Generado por Gemini</span>
-                </h2>
-                <p id="gemini-trends" class="text-gray-300 text-sm leading-relaxed mt-2 max-w-4xl">
-                  Cargando análisis...
-                </p>
-              </div>
-              <div class="pt-4 border-t border-white/5">
-                <h3 class="text-sm font-medium text-white mb-2">Recomendaciones:</h3>
-                <p id="gemini-recommendations" class="text-gray-400 text-sm italic">
-                  Cargando...
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Comparative Fixed Cards -->
-        <section id="comparative-section">
-          <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-            <i data-lucide="swords" class="w-5 h-5 text-gray-400"></i> Mi Comparativa: Frontier vs Open Source
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            
-            <div class="glass-card p-5 border-t-2 border-t-orange-500">
-              <div class="flex justify-between items-start mb-4">
-                <div>
-                  <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Anthropic</p>
-                  <h3 id="comp-anthropic-name" class="text-lg font-bold text-white truncate">--</h3>
-                </div>
-                <div class="provider-logo bg-orange-500/20 text-orange-500 border border-orange-500/30">A</div>
-              </div>
-              <div class="space-y-3 text-sm">
-                <div class="flex justify-between items-center"><span class="text-gray-400">Inteligencia:</span> <span id="comp-anthropic-int" class="font-medium text-white">--</span></div>
-                <div class="flex justify-between items-center"><span class="text-gray-400">Código:</span> <span id="comp-anthropic-cod" class="font-medium text-white">--</span></div>
-                <div class="flex justify-between items-center"><span class="text-gray-400">Precio/1M:</span> <span id="comp-anthropic-pri" class="font-medium text-white">--</span></div>
-              </div>
-            </div>
-
-            <div class="glass-card p-5 border-t-2 border-t-blue-500 relative">
-              <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
-                Value
-              </div>
-              <div class="flex justify-between items-start mb-4">
-                <div>
-                  <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Google</p>
-                  <h3 id="comp-google-name" class="text-lg font-bold text-white truncate">--</h3>
-                </div>
-                <div class="provider-logo bg-blue-500/20 text-blue-500 border border-blue-500/30">G</div>
-              </div>
-              <div class="space-y-3 text-sm">
-                <div class="flex justify-between items-center"><span class="text-gray-400">Inteligencia:</span> <span id="comp-google-int" class="font-medium text-white">--</span></div>
-                <div class="flex justify-between items-center"><span class="text-gray-400">Código:</span> <span id="comp-google-cod" class="font-medium text-white">--</span></div>
-                <div class="flex justify-between items-center"><span class="text-gray-400">Precio/1M:</span> <span id="comp-google-pri" class="font-medium text-white">--</span></div>
-              </div>
-            </div>
-
-            <div class="glass-card p-5 border-t-2 border-t-purple-500">
-              <div class="flex justify-between items-start mb-4">
-                <div>
-                  <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Open Source (Mejor)</p>
-                  <h3 id="comp-open-name" class="text-lg font-bold text-white truncate">--</h3>
-                </div>
-                <div class="provider-logo bg-purple-500/20 text-purple-500 border border-purple-500/30">O</div>
-              </div>
-              <div class="space-y-3 text-sm">
-                <div class="flex justify-between items-center"><span class="text-gray-400">Inteligencia:</span> <span id="comp-open-int" class="font-medium text-white">--</span></div>
-                <div class="flex justify-between items-center"><span class="text-gray-400">Código:</span> <span id="comp-open-cod" class="font-medium text-white">--</span></div>
-                <div class="flex justify-between items-center"><span class="text-gray-400">Precio/1M:</span> <span id="comp-open-pri" class="font-medium text-white">--</span></div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- Rankings Grid -->
-        <div id="full-view-section" class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-          
-          <!-- Coding -->
-          <div class="glass-card p-5">
-            <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2 border-b border-white/5 pb-3">
-              <i data-lucide="terminal" class="w-5 h-5 text-primary"></i> Mejores para Programar
-            </h2>
-            <div class="overflow-x-auto">
-              <table class="w-full text-sm text-left">
-                <thead class="text-xs text-gray-400 uppercase bg-white/5 rounded-t-lg">
-                  <tr>
-                    <th class="px-4 py-3 rounded-tl-lg">Modelo</th>
-                    <th class="px-4 py-3">Score</th>
-                    <th class="px-4 py-3">$/1M</th>
-                    <th class="px-4 py-3 text-right rounded-tr-lg">Tendencia</th>
-                  </tr>
-                </thead>
-                <tbody id="table-coding" class="divide-y divide-white/5">
-                  <!-- Filled by JS -->
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Intelligence -->
-          <div class="glass-card p-5">
-            <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2 border-b border-white/5 pb-3">
-              <i data-lucide="brain" class="w-5 h-5 text-secondary"></i> Inteligencia General
-            </h2>
-            <div class="overflow-x-auto">
-              <table class="w-full text-sm text-left">
-                <thead class="text-xs text-gray-400 uppercase bg-white/5 rounded-t-lg">
-                  <tr>
-                    <th class="px-4 py-3 rounded-tl-lg">Modelo</th>
-                    <th class="px-4 py-3">Score</th>
-                    <th class="px-4 py-3">$/1M</th>
-                    <th class="px-4 py-3 text-right rounded-tr-lg">Tendencia</th>
-                  </tr>
-                </thead>
-                <tbody id="table-intelligence" class="divide-y divide-white/5">
-                  <!-- Filled by JS -->
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Image -->
-          <div class="glass-card p-5">
-            <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2 border-b border-white/5 pb-3">
-              <i data-lucide="palette" class="w-5 h-5 text-pink-400"></i> Mejores para Diseño (Elo)
-            </h2>
-            <div class="overflow-x-auto">
-              <table class="w-full text-sm text-left">
-                <thead class="text-xs text-gray-400 uppercase bg-white/5 rounded-t-lg">
-                  <tr>
-                    <th class="px-4 py-3 rounded-tl-lg">Modelo</th>
-                    <th class="px-4 py-3">Elo</th>
-                    <th class="px-4 py-3">$/img</th>
-                    <th class="px-4 py-3 text-right rounded-tr-lg">Tendencia</th>
-                  </tr>
-                </thead>
-                <tbody id="table-image" class="divide-y divide-white/5">
-                  <!-- Filled by JS -->
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Value -->
-          <div class="glass-card p-5">
-            <h2 class="text-lg font-semibold text-white mb-4 flex items-center gap-2 border-b border-white/5 pb-3">
-              <i data-lucide="badge-dollar-sign" class="w-5 h-5 text-emerald-400"></i> Mejor Calidad-Precio
-            </h2>
-            <div class="overflow-x-auto">
-              <table class="w-full text-sm text-left">
-                <thead class="text-xs text-gray-400 uppercase bg-white/5 rounded-t-lg">
-                  <tr>
-                    <th class="px-4 py-3 rounded-tl-lg">Modelo</th>
-                    <th class="px-4 py-3">Idx/$</th>
-                    <th class="px-4 py-3">$/1M</th>
-                    <th class="px-4 py-3 text-right rounded-tr-lg">Tendencia</th>
-                  </tr>
-                </thead>
-                <tbody id="table-value" class="divide-y divide-white/5">
-                  <!-- Filled by JS -->
-                </tbody>
-              </table>
-            </div>
-          </div>
-
+        <div class="lead" style="--accent: var(--image)">
+          <div class="lead__kicker">Mejor diseño</div>
+          <div class="lead__value"><span id="kpi-image-score">—</span><span class="unit">ELO</span></div>
+          <div class="lead__name" id="kpi-image-name">—<span id="kpi-image-provider"></span></div>
         </div>
-      </main>
+        <div class="lead" style="--accent: var(--value)">
+          <div class="lead__kicker">Mejor precio</div>
+          <div class="lead__value"><span id="kpi-value-score">—</span><span class="unit">IDX/$</span></div>
+          <div class="lead__name" id="kpi-value-name">—<span id="kpi-value-provider"></span></div>
+        </div>
+        <div class="lead" style="--accent: var(--intel)">
+          <div class="lead__kicker">Nuevos lanzamientos</div>
+          <div class="lead__value"><span id="kpi-new-models">—</span><span class="unit">/30 días</span></div>
+          <div class="lead__name">Modelos estrenados<span>en el último mes</span></div>
+        </div>
+      </div>
 
-      <footer class="mt-12 border-t border-white/10 pt-6 pb-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-        <p>Dashboard de Tendencias de IA Estático. Generado vía GitHub Actions.</p>
-        <p>Datos provistos por <a href="https://artificialanalysis.ai" target="_blank" class="text-gray-400 hover:text-white transition-colors underline decoration-white/20 underline-offset-2">Artificial Analysis</a> bajo licencia.</p>
+      <!-- ============ RANKINGS (CHARTS) ============ -->
+      <div class="sec-head">
+        <span class="idx">01</span>
+        <h2>Los Rankings</h2>
+        <span class="rule"></span>
+        <span class="note">Barra = score relativo al líder</span>
+      </div>
+
+      <div class="charts">
+        <section class="chart chart--coding">
+          <div class="chart__title"><h3>Programación</h3><span class="metric">Coding Index</span></div>
+          <div id="chart-coding"></div>
+        </section>
+        <section class="chart chart--intel">
+          <div class="chart__title"><h3>Inteligencia General</h3><span class="metric">Intelligence Index</span></div>
+          <div id="chart-intelligence"></div>
+        </section>
+        <section class="chart chart--value">
+          <div class="chart__title"><h3>Calidad / Precio</h3><span class="metric">Índice ÷ $/1M</span></div>
+          <div id="chart-value"></div>
+        </section>
+        <section class="chart chart--image">
+          <div class="chart__title"><h3>Diseño & Imagen</h3><span class="metric">Elo Arena</span></div>
+          <div id="chart-image"></div>
+        </section>
+      </div>
+
+      <!-- ============ ANALYSIS ============ -->
+      <div class="sec-head">
+        <span class="idx">02</span>
+        <h2>La Columna</h2>
+        <span class="rule"></span>
+        <span class="note">Redactado por Gemini</span>
+      </div>
+      <div class="analysis">
+        <div class="analysis__lead">
+          <p id="gemini-trends">Cargando análisis del día…</p>
+          <p class="byline">Análisis generado por <b>Google Gemini</b> · Datos de Artificial Analysis</p>
+        </div>
+        <aside class="analysis__aside">
+          <h4>Recomendaciones del editor</h4>
+          <p id="gemini-recommendations">Cargando…</p>
+        </aside>
+      </div>
+
+      <!-- ============ MATCHUP ============ -->
+      <div class="sec-head">
+        <span class="idx">03</span>
+        <h2>Frontera vs. Código Abierto</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="matchup">
+        <div class="team" style="--tc: var(--coding)">
+          <div class="team__label">Anthropic</div>
+          <div class="team__name" id="comp-anthropic-name">—</div>
+          <div class="team__row"><span>Inteligencia</span><b id="comp-anthropic-int">—</b></div>
+          <div class="team__row"><span>Código</span><b id="comp-anthropic-cod">—</b></div>
+          <div class="team__row"><span>Precio / 1M</span><b id="comp-anthropic-pri">—</b></div>
+        </div>
+        <div class="team" style="--tc: var(--intel)">
+          <div class="team__label">Google</div>
+          <div class="team__name" id="comp-google-name">—</div>
+          <div class="team__row"><span>Inteligencia</span><b id="comp-google-int">—</b></div>
+          <div class="team__row"><span>Código</span><b id="comp-google-cod">—</b></div>
+          <div class="team__row"><span>Precio / 1M</span><b id="comp-google-pri">—</b></div>
+        </div>
+        <div class="team" style="--tc: var(--value)">
+          <div class="team__label">Código Abierto (mejor)</div>
+          <div class="team__name" id="comp-open-name">—</div>
+          <div class="team__row"><span>Inteligencia</span><b id="comp-open-int">—</b></div>
+          <div class="team__row"><span>Código</span><b id="comp-open-cod">—</b></div>
+          <div class="team__row"><span>Precio / 1M</span><b id="comp-open-pri">—</b></div>
+        </div>
+      </div>
+
+      <footer>
+        <span>Reporte estático · Generado vía GitHub Actions</span>
+        <span>Datos por <a href="https://artificialanalysis.ai" target="_blank" rel="noopener">Artificial Analysis</a> bajo licencia</span>
       </footer>
-
     </div>
 
-    <!-- Application Script -->
-    <script src="/app.js"></script>
-    <script>
-      // Initialize icons
-      lucide.createIcons();
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
-

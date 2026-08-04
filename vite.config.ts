@@ -4,6 +4,9 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // Rutas relativas para que el sitio funcione bajo un subpath
+    // (p. ej. GitHub Pages sirve el proyecto en /Analitycs/).
+    base: './',
     plugins: [tailwindcss()],
     resolve: {
       alias: {

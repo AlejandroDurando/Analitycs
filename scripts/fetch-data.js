@@ -146,15 +146,38 @@ async function run() {
       return pathStr.split('.').reduce((o, i) => (o ? o[i] : undefined), obj);
     };
 
+    // Normaliza el nombre de un modelo a su "familia" quitando el sufijo de
+    // variante entre paréntesis (p.ej. "(xhigh)", "(Adaptive Reasoning, Max Effort)").
+    // Así podemos deduplicar y mostrar cada modelo una sola vez, igual que la
+    // vista curada de artificialanalysis.ai.
+    const familyKey = (name, provider) => {
+      const base = String(name || '')
+        .replace(/\s*\([^)]*\)\s*/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+      return `${(provider || '').toLowerCase()}::${base}`;
+    };
+
+    // Se queda con la mejor variante (mayor score) de cada familia de modelo
+    // y devuelve la lista ordenada de mayor a menor.
+    const dedupeByFamily = (rows) => {
+      const best = new Map();
+      for (const row of rows) {
+        const key = familyKey(row.name, row.provider);
+        const current = best.get(key);
+        if (!current || row.score > current.score) best.set(key, row);
+      }
+      return Array.from(best.values()).sort((a, b) => b.score - a.score);
+    };
+
     const safeParseLLMs = (arr, scorePath, take = 8) => {
       if (!Array.isArray(arr)) return [];
-      return arr
+      const mapped = arr
         .filter(m => {
           const val = getVal(m, scorePath);
           return val !== undefined && val !== null;
         })
-        .sort((a, b) => getVal(b, scorePath) - getVal(a, scorePath))
-        .slice(0, take)
         .map(m => {
           const score = getVal(m, scorePath);
           const price = m.pricing?.price_1m_blended_3_to_1 ?? null;
@@ -167,12 +190,13 @@ async function run() {
             delta: '-'
           };
         });
+      return dedupeByFamily(mapped).slice(0, take);
     };
 
     const intelligenceModels = safeParseLLMs(rawLLMs, 'evaluations.artificial_analysis_intelligence_index');
     const codingModels = safeParseLLMs(rawLLMs, 'evaluations.artificial_analysis_coding_index');
 
-    const valueModels = rawLLMs
+    const valueModelsRaw = rawLLMs
       .filter(m => m.evaluations?.artificial_analysis_intelligence_index && m.pricing?.price_1m_blended_3_to_1 > 0)
       .map(m => {
         const intel = m.evaluations.artificial_analysis_intelligence_index;
@@ -186,16 +210,13 @@ async function run() {
           speed: m.median_output_tokens_per_second ? Math.round(m.median_output_tokens_per_second) : null,
           delta: '-'
         };
-      })
-      .sort((a, b) => b.score - a.score)
-      .slice(0, 8);
+      });
+    const valueModels = dedupeByFamily(valueModelsRaw).slice(0, 8);
 
     let imageModels = [];
     if (imageDataRaw && imageDataRaw.data && Array.isArray(imageDataRaw.data)) {
-      imageModels = imageDataRaw.data
+      const imageModelsRaw = imageDataRaw.data
         .filter(m => m.elo !== undefined && m.elo !== null)
-        .sort((a, b) => b.elo - a.elo)
-        .slice(0, 8)
         .map(m => ({
           name: m.name || 'Unknown',
           provider: m.model_creator?.name || 'Unknown',
@@ -204,6 +225,7 @@ async function run() {
           speed: null,
           delta: '-'
         }));
+      imageModels = dedupeByFamily(imageModelsRaw).slice(0, 8);
     }
 
     const findTopByCreator = (creatorNameRegex) => {
