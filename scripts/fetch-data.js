@@ -171,7 +171,7 @@ async function run() {
       return Array.from(best.values()).sort((a, b) => b.score - a.score);
     };
 
-    const safeParseLLMs = (arr, scorePath, take = 8) => {
+    const safeParseLLMs = (arr, scorePath, take = 12) => {
       if (!Array.isArray(arr)) return [];
       const mapped = arr
         .filter(m => {
@@ -211,7 +211,7 @@ async function run() {
           delta: '-'
         };
       });
-    const valueModels = dedupeByFamily(valueModelsRaw).slice(0, 8);
+    const valueModels = dedupeByFamily(valueModelsRaw).slice(0, 12);
 
     let imageModels = [];
     if (imageDataRaw && imageDataRaw.data && Array.isArray(imageDataRaw.data)) {
@@ -225,7 +225,7 @@ async function run() {
           speed: null,
           delta: '-'
         }));
-      imageModels = dedupeByFamily(imageModelsRaw).slice(0, 8);
+      imageModels = dedupeByFamily(imageModelsRaw).slice(0, 12);
     }
 
     const findTopByCreator = (creatorNameRegex) => {
