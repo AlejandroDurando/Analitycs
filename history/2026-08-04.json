@@ -1,31 +1,31 @@
 {
-  "lastUpdated": "2026-08-04T11:26:31.380Z",
+  "lastUpdated": "2026-08-04T14:36:15.436Z",
   "kpis": {
     "bestCodingModel": {
       "name": "GPT-5.6 Sol (xhigh)",
       "provider": "OpenAI",
       "score": 78.3,
       "price": 11.25,
-      "speed": 61,
+      "speed": 73,
       "delta": "-"
     },
     "bestImageModel": {
       "name": "GPT Image 2 (high)",
       "provider": "OpenAI",
-      "score": 1340,
+      "score": 1339,
       "price": null,
       "speed": null,
       "delta": "-"
     },
     "bestValueModel": {
-      "name": "Qwen3.5 4B (Reasoning)",
-      "provider": "Alibaba",
-      "score": 335,
-      "price": 0.06,
-      "speed": 18,
+      "name": "Hy3-preview (Reasoning)",
+      "provider": "Tencent",
+      "score": 336,
+      "price": 0.1,
+      "speed": null,
       "delta": "-"
     },
-    "newModelsThisWeek": 35
+    "newModelsThisWeek": 39
   },
   "codingModels": [
     {
@@ -33,7 +33,7 @@
       "provider": "OpenAI",
       "score": 78.3,
       "price": 11.25,
-      "speed": 61,
+      "speed": 73,
       "delta": "-"
     },
     {
@@ -41,7 +41,7 @@
       "provider": "Anthropic",
       "score": 78,
       "price": 10,
-      "speed": 55,
+      "speed": 54,
       "delta": "-"
     },
     {
@@ -49,7 +49,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 135,
+      "speed": 126,
       "delta": "-"
     },
     {
@@ -57,7 +57,71 @@
       "provider": "Anthropic",
       "score": 76.5,
       "price": 20,
-      "speed": 58,
+      "speed": 64,
+      "delta": "-"
+    },
+    {
+      "name": "Kimi K3 (max)",
+      "provider": "Kimi",
+      "score": 76.2,
+      "price": 6,
+      "speed": 35,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.5 (xhigh)",
+      "provider": "OpenAI",
+      "score": 74.9,
+      "price": 11.25,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",
+      "provider": "Anthropic",
+      "score": 74.3,
+      "price": 10,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",
+      "provider": "Anthropic",
+      "score": 73.6,
+      "price": 10,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Grok 4.5 (high)",
+      "provider": "SpaceXAI",
+      "score": 72.4,
+      "price": 3,
+      "speed": 59,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+      "provider": "Anthropic",
+      "score": 71.5,
+      "price": 4,
+      "speed": 85,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Luna (max)",
+      "provider": "OpenAI",
+      "score": 71.4,
+      "price": 0.45,
+      "speed": 166,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Spark 1.1 (xhigh)",
+      "provider": "Meta",
+      "score": 71.3,
+      "price": 2,
+      "speed": 202,
       "delta": "-"
     }
   ],
@@ -65,7 +129,7 @@
     {
       "name": "GPT Image 2 (high)",
       "provider": "OpenAI",
-      "score": 1340,
+      "score": 1339,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -73,7 +137,7 @@
     {
       "name": "Reve 2.1",
       "provider": "Reve",
-      "score": 1300,
+      "score": 1299,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -89,15 +153,7 @@
     {
       "name": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
       "provider": "Google",
-      "score": 1264,
-      "price": null,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
-      "provider": "Google",
-      "score": 1264,
+      "score": 1263,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -105,15 +161,15 @@
     {
       "name": "GPT Image 1.5 (high)",
       "provider": "OpenAI",
-      "score": 1264,
+      "score": 1263,
       "price": null,
       "speed": null,
       "delta": "-"
     },
     {
-      "name": "Riverflow 2.0",
-      "provider": "Sourceful",
-      "score": 1254,
+      "name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
+      "provider": "Google",
+      "score": 1262,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -121,7 +177,47 @@
     {
       "name": "HiDream-O1-Image-1.5",
       "provider": "HiDream",
-      "score": 1246,
+      "score": 1245,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Seedream 5.0 Pro",
+      "provider": "Bytedance",
+      "score": 1240,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+      "provider": "Google",
+      "score": 1225,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Cosmos3-Super-Text2Image (agentic)",
+      "provider": "NVIDIA",
+      "score": 1219,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "MAI-Image-2.5-Flash",
+      "provider": "Microsoft AI",
+      "score": 1208,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Recraft V4.1 Utility",
+      "provider": "Recraft",
+      "score": 1205,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -133,7 +229,7 @@
       "provider": "Anthropic",
       "score": 60.7,
       "price": 10,
-      "speed": 55,
+      "speed": 54,
       "delta": "-"
     },
     {
@@ -141,7 +237,7 @@
       "provider": "Anthropic",
       "score": 59.9,
       "price": 20,
-      "speed": 58,
+      "speed": 64,
       "delta": "-"
     },
     {
@@ -149,33 +245,97 @@
       "provider": "OpenAI",
       "score": 58.9,
       "price": 11.25,
-      "speed": 67,
+      "speed": 75,
       "delta": "-"
     },
     {
-      "name": "Kimi K3",
+      "name": "Kimi K3 (max)",
       "provider": "Kimi",
       "score": 57.1,
       "price": 6,
-      "speed": 32,
+      "speed": 35,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",
+      "provider": "Anthropic",
+      "score": 55.7,
+      "price": 10,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Terra (max)",
+      "provider": "OpenAI",
+      "score": 55,
+      "price": 4.5,
+      "speed": 126,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.5 (xhigh)",
+      "provider": "OpenAI",
+      "score": 54.8,
+      "price": 11.25,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Grok 4.5 (high)",
+      "provider": "SpaceXAI",
+      "score": 53.8,
+      "price": 3,
+      "speed": 59,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 4.7 (Adaptive Reasoning, Max Effort)",
+      "provider": "Anthropic",
+      "score": 53.5,
+      "price": 10,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+      "provider": "Anthropic",
+      "score": 53.4,
+      "price": 4,
+      "speed": 85,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.4 (xhigh)",
+      "provider": "OpenAI",
+      "score": 51.4,
+      "price": 5.63,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Luna (max)",
+      "provider": "OpenAI",
+      "score": 51.2,
+      "price": 0.45,
+      "speed": 166,
       "delta": "-"
     }
   ],
   "valueModels": [
     {
+      "name": "Hy3-preview (Reasoning)",
+      "provider": "Tencent",
+      "score": 336,
+      "price": 0.1,
+      "speed": null,
+      "delta": "-"
+    },
+    {
       "name": "Qwen3.5 4B (Reasoning)",
       "provider": "Alibaba",
       "score": 335,
       "price": 0.06,
-      "speed": 18,
-      "delta": "-"
-    },
-    {
-      "name": "Hy3-preview (Reasoning)",
-      "provider": "Tencent",
-      "score": 314,
-      "price": 0.11,
-      "speed": 169,
+      "speed": 27,
       "delta": "-"
     },
     {
@@ -183,7 +343,15 @@
       "provider": "Google",
       "score": 305,
       "price": 0.04,
-      "speed": 106,
+      "speed": 96,
+      "delta": "-"
+    },
+    {
+      "name": "DeepSeek V4 Flash 0731 (Reasoning, Max Effort)",
+      "provider": "DeepSeek",
+      "score": 285.1,
+      "price": 0.18,
+      "speed": 113,
       "delta": "-"
     },
     {
@@ -191,15 +359,63 @@
       "provider": "Multiverse Computing",
       "score": 273.8,
       "price": 0.07,
-      "speed": 418,
+      "speed": 371,
       "delta": "-"
     },
     {
       "name": "DeepSeek V4 Flash (Reasoning, Max Effort)",
       "provider": "DeepSeek",
-      "score": 230.3,
+      "score": 235.7,
+      "price": 0.17,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "MiMo-V2.5",
+      "provider": "Xiaomi",
+      "score": 212.6,
       "price": 0.18,
-      "speed": 112,
+      "speed": 77,
+      "delta": "-"
+    },
+    {
+      "name": "MiMo-V2-Flash (Reasoning)",
+      "provider": "Xiaomi",
+      "score": 208,
+      "price": 0.15,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Step 3.5 Flash 2603",
+      "provider": "StepFun",
+      "score": 173.3,
+      "price": 0.15,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Hy3",
+      "provider": "Tencent",
+      "score": 171,
+      "price": 0.24,
+      "speed": 71,
+      "delta": "-"
+    },
+    {
+      "name": "Step 3.5 Flash",
+      "provider": "StepFun",
+      "score": 170,
+      "price": 0.15,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
+      "provider": "NVIDIA",
+      "score": 161.4,
+      "price": 0.09,
+      "speed": 291,
       "delta": "-"
     }
   ],
@@ -209,7 +425,7 @@
       "metrics": {
         "intelligence": 61,
         "coding": 78,
-        "speed": 55,
+        "speed": 54,
         "price": 10
       }
     },
@@ -218,7 +434,7 @@
       "metrics": {
         "intelligence": 50,
         "coding": 70,
-        "speed": 220,
+        "speed": 269,
         "price": 3.38
       }
     },
@@ -227,13 +443,13 @@
       "metrics": {
         "intelligence": 51,
         "coding": 71,
-        "speed": 135,
+        "speed": 202,
         "price": 2
       }
     }
   },
   "geminiAnalysis": {
-    "trends": "La API de Gemini no está configurada, por lo que este es un análisis de marcador de posición. Configura GEMINI_API_KEY en tus secretos de GitHub para ver el análisis real.",
-    "recommendations": "Sin recomendaciones disponibles por falta de API key de Gemini."
+    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
+    "recommendations": "Error al generar recomendaciones."
   }
 }
