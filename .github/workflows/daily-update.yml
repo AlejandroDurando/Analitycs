@@ -48,6 +48,13 @@ jobs:
           git commit -m "data: Auto-update AI Trends dashboard [skip ci]"
           git push
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          # Crea/habilita el sitio de GitHub Pages automáticamente si aún no existe.
+          # Evita el error "Failed to create deployment (status: 404)".
+          enablement: true
+
       - name: Build Dashboard
         run: npm run build
 
