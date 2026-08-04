@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T14:39:19.436Z",
+  "lastUpdated": "2026-08-04T15:29:31.135Z",
   "kpis": {
     "bestCodingModel": {
       "name": "GPT-5.6 Sol (xhigh)",
@@ -41,7 +41,7 @@
       "provider": "Anthropic",
       "score": 78,
       "price": 10,
-      "speed": 54,
+      "speed": 56,
       "delta": "-"
     },
     {
@@ -57,7 +57,7 @@
       "provider": "Anthropic",
       "score": 76.5,
       "price": 20,
-      "speed": 64,
+      "speed": 67,
       "delta": "-"
     },
     {
@@ -113,7 +113,7 @@
       "provider": "OpenAI",
       "score": 71.4,
       "price": 0.45,
-      "speed": 166,
+      "speed": 167,
       "delta": "-"
     },
     {
@@ -229,7 +229,7 @@
       "provider": "Anthropic",
       "score": 60.7,
       "price": 10,
-      "speed": 54,
+      "speed": 56,
       "delta": "-"
     },
     {
@@ -237,7 +237,7 @@
       "provider": "Anthropic",
       "score": 59.9,
       "price": 20,
-      "speed": 64,
+      "speed": 67,
       "delta": "-"
     },
     {
@@ -245,7 +245,7 @@
       "provider": "OpenAI",
       "score": 58.9,
       "price": 11.25,
-      "speed": 75,
+      "speed": 76,
       "delta": "-"
     },
     {
@@ -317,7 +317,7 @@
       "provider": "OpenAI",
       "score": 51.2,
       "price": 0.45,
-      "speed": 166,
+      "speed": 167,
       "delta": "-"
     }
   ],
@@ -335,7 +335,7 @@
       "provider": "Alibaba",
       "score": 335,
       "price": 0.06,
-      "speed": 27,
+      "speed": 25,
       "delta": "-"
     },
     {
@@ -359,7 +359,7 @@
       "provider": "Multiverse Computing",
       "score": 273.8,
       "price": 0.07,
-      "speed": 371,
+      "speed": 374,
       "delta": "-"
     },
     {
@@ -375,7 +375,7 @@
       "provider": "Xiaomi",
       "score": 212.6,
       "price": 0.18,
-      "speed": 77,
+      "speed": 78,
       "delta": "-"
     },
     {
@@ -415,7 +415,7 @@
       "provider": "NVIDIA",
       "score": 161.4,
       "price": 0.09,
-      "speed": 291,
+      "speed": 285,
       "delta": "-"
     }
   ],
@@ -425,7 +425,7 @@
       "metrics": {
         "intelligence": 61,
         "coding": 78,
-        "speed": 54,
+        "speed": 56,
         "price": 10
       }
     },
@@ -449,7 +449,7 @@
     }
   },
   "geminiAnalysis": {
-    "trends": "El mercado de modelos fundacionales muestra un claro liderazgo de OpenAI tanto en programación con GPT-5.6 Sol como en generación de imágenes con GPT Image 2. Anthropic se mantiene altamente competitivo en desarrollo con Claude Opus 5, ofreciendo un rendimiento cercano a menor costo. Destaca la irrupción de Tencent con Hy3-preview como líder en relación calidad-precio, democratizando el razonamiento avanzado a un costo sumamente bajo (0.1). Con 39 nuevos modelos esta semana, la aceleración de la industria presiona al mercado hacia una polarización entre rendimiento extremo e hiper-eficiencia económica.",
-    "recommendations": "Programación: Elige GPT-5.6 Sol para máxima precisión técnica, o Claude Opus 5 para equilibrar alto rendimiento y costo.\nImagen: Implementa GPT Image 2 de OpenAI para obtener la mayor calidad visual del mercado actual.\nCalidad-Precio: Adopta Hy3-preview de Tencent en tareas de razonamiento donde la optimización del presupuesto sea prioritaria."
+    "trends": "OpenAI domina el panorama actual liderando tanto en programación con GPT-5.6 Sol como en generación de imágenes con GPT Image 2. Anthropic se mantiene cerca en desarrollo con Claude Opus 5 a un menor precio. Con 39 nuevos modelos lanzados esta semana, destaca la irrupción de Tencent con Hy3-preview en la categoría de calidad-precio, ofreciendo razonamiento a solo $0.10. El mercado muestra una clara polarización entre modelos de frontera de alto costo y opciones hiper-económicas.",
+    "recommendations": "Programación: Elija GPT-5.6 Sol para máxima precisión, o GPT-5.6 Terra si busca mayor velocidad y menor costo. Imagen: Adopte GPT Image 2 por su rendimiento líder en la industria. Calidad-Precio: Implemente Hy3-preview para tareas que requieran razonamiento con presupuesto limitado."
   }
 }
