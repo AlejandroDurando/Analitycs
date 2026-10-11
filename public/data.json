@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-10T17:44:45.380Z",
+  "lastUpdated": "2026-10-11T17:58:47.281Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 69,
+      "speed": 72,
       "delta": "-"
     },
     "bestImageModel": {
@@ -25,7 +25,7 @@
       "speed": null,
       "delta": "-"
     },
-    "newModelsThisWeek": 44
+    "newModelsThisWeek": 43
   },
   "codingModels": [
     {
@@ -33,7 +33,7 @@
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 69,
+      "speed": 72,
       "delta": "-"
     },
     {
@@ -57,7 +57,7 @@
       "provider": "OpenAI",
       "score": 77.1,
       "price": 20,
-      "speed": 47,
+      "speed": 53,
       "delta": "-"
     },
     {
@@ -73,7 +73,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 114,
+      "speed": 119,
       "delta": "-"
     },
     {
@@ -89,7 +89,7 @@
       "provider": "Meta",
       "score": 76.5,
       "price": 2,
-      "speed": 225,
+      "speed": 224,
       "delta": "-"
     },
     {
@@ -97,7 +97,7 @@
       "provider": "Google",
       "score": 76.3,
       "price": 1.5,
-      "speed": 127,
+      "speed": 135,
       "delta": "-"
     },
     {
@@ -145,7 +145,7 @@
     {
       "name": "GPT Image 2 (high)",
       "provider": "OpenAI",
-      "score": 1171,
+      "score": 1172,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -161,7 +161,7 @@
     {
       "name": "Grok Imagine Image 2.0",
       "provider": "SpaceXAI",
-      "score": 1157,
+      "score": 1155,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -169,7 +169,7 @@
     {
       "name": "MAI-Image-2.6",
       "provider": "Microsoft AI",
-      "score": 1152,
+      "score": 1151,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -177,7 +177,7 @@
     {
       "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
       "provider": "Google",
-      "score": 1126,
+      "score": 1125,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -185,7 +185,7 @@
     {
       "name": "FLUX 3 Image",
       "provider": "Black Forest Labs",
-      "score": 1115,
+      "score": 1116,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -201,7 +201,7 @@
     {
       "name": "GPT Image 1.5 (high)",
       "provider": "OpenAI",
-      "score": 1109,
+      "score": 1108,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -209,7 +209,7 @@
     {
       "name": "MAI-Image-2.6-Flash",
       "provider": "Microsoft AI",
-      "score": 1106,
+      "score": 1107,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -237,7 +237,7 @@
       "provider": "Anthropic",
       "score": 56,
       "price": 4,
-      "speed": 138,
+      "speed": 136,
       "delta": "-"
     },
     {
@@ -245,7 +245,7 @@
       "provider": "Anthropic",
       "score": 53.4,
       "price": 20,
-      "speed": 69,
+      "speed": 72,
       "delta": "-"
     },
     {
@@ -253,7 +253,7 @@
       "provider": "OpenAI",
       "score": 52.7,
       "price": 20,
-      "speed": 50,
+      "speed": 58,
       "delta": "-"
     },
     {
@@ -269,7 +269,7 @@
       "provider": "OpenAI",
       "score": 51.8,
       "price": 4,
-      "speed": 61,
+      "speed": 62,
       "delta": "-"
     },
     {
@@ -317,7 +317,7 @@
       "provider": "SpaceXAI",
       "score": 46.4,
       "price": 3,
-      "speed": 74,
+      "speed": 82,
       "delta": "-"
     }
   ],
@@ -335,7 +335,7 @@
       "provider": "Google",
       "score": 222.5,
       "price": 0.04,
-      "speed": 29,
+      "speed": 30,
       "delta": "-"
     },
     {
@@ -351,7 +351,7 @@
       "provider": "Alibaba",
       "score": 218.3,
       "price": 0.06,
-      "speed": 22,
+      "speed": 18,
       "delta": "-"
     },
     {
@@ -367,7 +367,7 @@
       "provider": "Xiaomi",
       "score": 216.6,
       "price": 0.18,
-      "speed": 49,
+      "speed": 48,
       "delta": "-"
     },
     {
@@ -375,7 +375,7 @@
       "provider": "InclusionAI",
       "score": 203.6,
       "price": 0.11,
-      "speed": 319,
+      "speed": 317,
       "delta": "-"
     },
     {
@@ -383,7 +383,7 @@
       "provider": "OpenAI",
       "score": 190.5,
       "price": 0.2,
-      "speed": 139,
+      "speed": 138,
       "delta": "-"
     },
     {
@@ -391,7 +391,7 @@
       "provider": "InclusionAI",
       "score": 181.1,
       "price": 0.11,
-      "speed": 345,
+      "speed": null,
       "delta": "-"
     },
     {
@@ -399,7 +399,7 @@
       "provider": "Z AI",
       "score": 176.4,
       "price": 0.24,
-      "speed": 54,
+      "speed": 57,
       "delta": "-"
     },
     {
@@ -407,7 +407,7 @@
       "provider": "IBM",
       "score": 175,
       "price": 0.05,
-      "speed": 227,
+      "speed": 226,
       "delta": "-"
     },
     {
@@ -415,7 +415,7 @@
       "provider": "Alibaba",
       "score": 173,
       "price": 0.23,
-      "speed": 53,
+      "speed": 52,
       "delta": "-"
     }
   ],
@@ -449,7 +449,7 @@
     }
   },
   "geminiAnalysis": {
-    "trends": "El ecosistema de IA muestra una notable aceleración con 44 lanzamientos esta semana, reflejando una intensa competencia por el liderazgo especializado. Anthropic consolida su dominio en ingeniería de software con Claude Fable 5.1, superando a GPT-5.6 aunque con una tarifa premium de 20 dólares. En el ámbito visual, OpenAI mantiene un monopolio absoluto en el podio gracias a la familia GPT Image 2.5, liderada por la variante Sunburst. Mientras tanto, Tencent sacude la frontera de accesibilidad con Hy3-preview, demostrando que la capacidad de razonamiento de alto rendimiento a un coste ultra marginal ($0.1) es el nuevo frente estratégico del mercado.",
-    "recommendations": "Programación: Elige Claude Fable 5.1 para código crítico y complejo; si requieres optimizar costes sin sacrificar fiabilidad, GPT-5.6 Sol es la mejor alternativa.\nImagen: Apuesta por GPT Image 2.5 Sunburst como estándar definitivo para producción creativa y fotorrealismo de máxima calidad.\nCalidad-Precio: Implementa Hy3-preview de Tencent para tareas analíticas y razonamiento masivo con un gasto operativo prácticamente nulo."
+    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
+    "recommendations": "Error al generar recomendaciones."
   }
 }
