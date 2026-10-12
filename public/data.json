@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-11T17:58:47.281Z",
+  "lastUpdated": "2026-10-12T21:40:58.941Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 72,
+      "speed": 67,
       "delta": "-"
     },
     "bestImageModel": {
@@ -25,7 +25,7 @@
       "speed": null,
       "delta": "-"
     },
-    "newModelsThisWeek": 43
+    "newModelsThisWeek": 45
   },
   "codingModels": [
     {
@@ -33,7 +33,7 @@
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 72,
+      "speed": 67,
       "delta": "-"
     },
     {
@@ -73,7 +73,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 119,
+      "speed": 120,
       "delta": "-"
     },
     {
@@ -97,7 +97,7 @@
       "provider": "Google",
       "score": 76.3,
       "price": 1.5,
-      "speed": 135,
+      "speed": 150,
       "delta": "-"
     },
     {
@@ -105,7 +105,7 @@
       "provider": "Alibaba",
       "score": 76.2,
       "price": 3,
-      "speed": 36,
+      "speed": 37,
       "delta": "-"
     },
     {
@@ -113,7 +113,7 @@
       "provider": "Kimi",
       "score": 76.2,
       "price": 6,
-      "speed": 39,
+      "speed": 41,
       "delta": "-"
     },
     {
@@ -237,7 +237,15 @@
       "provider": "Anthropic",
       "score": 56,
       "price": 4,
-      "speed": 136,
+      "speed": 133,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Wonder Full (Max)",
+      "provider": "Meta",
+      "score": 55.8,
+      "price": 0,
+      "speed": null,
       "delta": "-"
     },
     {
@@ -245,7 +253,7 @@
       "provider": "Anthropic",
       "score": 53.4,
       "price": 20,
-      "speed": 72,
+      "speed": 67,
       "delta": "-"
     },
     {
@@ -253,7 +261,7 @@
       "provider": "OpenAI",
       "score": 52.7,
       "price": 20,
-      "speed": 58,
+      "speed": 61,
       "delta": "-"
     },
     {
@@ -265,11 +273,19 @@
       "delta": "-"
     },
     {
+      "name": "Muse Wonder (Max)",
+      "provider": "Meta",
+      "score": 52.4,
+      "price": 8,
+      "speed": 95,
+      "delta": "-"
+    },
+    {
       "name": "GPT-6.1 Sol (Max)",
       "provider": "OpenAI",
       "score": 51.8,
       "price": 4,
-      "speed": 62,
+      "speed": 61,
       "delta": "-"
     },
     {
@@ -293,7 +309,7 @@
       "provider": "Meta",
       "score": 48.1,
       "price": 2,
-      "speed": 115,
+      "speed": 110,
       "delta": "-"
     },
     {
@@ -302,22 +318,6 @@
       "score": 47.6,
       "price": 4,
       "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "GPT-5.6 Sol (Max)",
-      "provider": "OpenAI",
-      "score": 47,
-      "price": 8,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "Grok 4.7 (Xhigh)",
-      "provider": "SpaceXAI",
-      "score": 46.4,
-      "price": 3,
-      "speed": 82,
       "delta": "-"
     }
   ],
@@ -335,7 +335,7 @@
       "provider": "Google",
       "score": 222.5,
       "price": 0.04,
-      "speed": 30,
+      "speed": 28,
       "delta": "-"
     },
     {
@@ -343,7 +343,7 @@
       "provider": "InclusionAI",
       "score": 221.6,
       "price": 0.11,
-      "speed": 148,
+      "speed": 141,
       "delta": "-"
     },
     {
@@ -351,7 +351,7 @@
       "provider": "Alibaba",
       "score": 218.3,
       "price": 0.06,
-      "speed": 18,
+      "speed": 29,
       "delta": "-"
     },
     {
@@ -359,7 +359,7 @@
       "provider": "Anthropic",
       "score": 217,
       "price": 0.2,
-      "speed": 237,
+      "speed": 239,
       "delta": "-"
     },
     {
@@ -375,7 +375,7 @@
       "provider": "InclusionAI",
       "score": 203.6,
       "price": 0.11,
-      "speed": 317,
+      "speed": 315,
       "delta": "-"
     },
     {
@@ -383,7 +383,7 @@
       "provider": "OpenAI",
       "score": 190.5,
       "price": 0.2,
-      "speed": 138,
+      "speed": 139,
       "delta": "-"
     },
     {
@@ -399,7 +399,7 @@
       "provider": "Z AI",
       "score": 176.4,
       "price": 0.24,
-      "speed": 57,
+      "speed": 61,
       "delta": "-"
     },
     {
@@ -407,7 +407,7 @@
       "provider": "IBM",
       "score": 175,
       "price": 0.05,
-      "speed": 226,
+      "speed": 228,
       "delta": "-"
     },
     {
@@ -415,7 +415,7 @@
       "provider": "Alibaba",
       "score": 173,
       "price": 0.23,
-      "speed": 52,
+      "speed": 55,
       "delta": "-"
     }
   ],
@@ -439,17 +439,17 @@
       }
     },
     "openSource": {
-      "name": "Muse Spark 1.3 (Max)",
+      "name": "Muse Wonder Full (Max)",
       "metrics": {
-        "intelligence": 48,
-        "coding": 76,
-        "speed": 115,
-        "price": 2
+        "intelligence": 56,
+        "coding": "N/A",
+        "speed": "N/A",
+        "price": "N/A"
       }
     }
   },
   "geminiAnalysis": {
-    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
-    "recommendations": "Error al generar recomendaciones."
+    "trends": "El mercado de IA muestra una aceleración notable con 45 modelos nuevos esta semana. Anthropic retiene el liderazgo en desarrollo técnico con Claude Fable 5.1 (81.6 pts), aunque OpenAI ejerce presión con GPT-5.6 Sol a menos de la mitad del precio. En generación de imagen, OpenAI ejerce un monopolio total ocupando los tres primeros puestos con la familia GPT Image 2.5. Mientras tanto, Tencent sacude la industria al posicionar Hy3-preview como el referente absoluto en relación coste-rendimiento, ofreciendo razonamiento competitivo a un coste disruptivo de 0.1.",
+    "recommendations": "Programación: Elige Claude Fable 5.1 para desarrollo crítico y máxima precisión, o GPT-5.6 Sol para proyectos con presupuestos ajustados.\nImagen: Despliega GPT Image 2.5 Sunburst al ser el líder indiscutible en calidad gráfica y consistencia visual.\nCalidad-Precio: Adopta Hy3-preview de Tencent para flujos de razonamiento masivo donde el retorno de inversión y el bajo coste sean esenciales."
   }
 }
