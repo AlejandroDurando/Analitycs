@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-10-12T21:40:58.941Z",
+  "lastUpdated": "2026-10-13T19:49:07.147Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 67,
+      "speed": 65,
       "delta": "-"
     },
     "bestImageModel": {
       "name": "GPT Image 2.5 Sunburst (max)",
       "provider": "OpenAI",
-      "score": 1198,
+      "score": 1199,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -33,7 +33,7 @@
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 67,
+      "speed": 65,
       "delta": "-"
     },
     {
@@ -57,7 +57,7 @@
       "provider": "OpenAI",
       "score": 77.1,
       "price": 20,
-      "speed": 53,
+      "speed": 49,
       "delta": "-"
     },
     {
@@ -73,7 +73,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 120,
+      "speed": 108,
       "delta": "-"
     },
     {
@@ -89,7 +89,7 @@
       "provider": "Meta",
       "score": 76.5,
       "price": 2,
-      "speed": 224,
+      "speed": 206,
       "delta": "-"
     },
     {
@@ -97,7 +97,7 @@
       "provider": "Google",
       "score": 76.3,
       "price": 1.5,
-      "speed": 150,
+      "speed": 139,
       "delta": "-"
     },
     {
@@ -105,7 +105,7 @@
       "provider": "Alibaba",
       "score": 76.2,
       "price": 3,
-      "speed": 37,
+      "speed": 40,
       "delta": "-"
     },
     {
@@ -113,7 +113,7 @@
       "provider": "Kimi",
       "score": 76.2,
       "price": 6,
-      "speed": 41,
+      "speed": 45,
       "delta": "-"
     },
     {
@@ -129,7 +129,7 @@
     {
       "name": "GPT Image 2.5 Sunburst (max)",
       "provider": "OpenAI",
-      "score": 1198,
+      "score": 1199,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -137,7 +137,7 @@
     {
       "name": "GPT Image 2.5 Flare (max)",
       "provider": "OpenAI",
-      "score": 1191,
+      "score": 1192,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -153,7 +153,7 @@
     {
       "name": "Nano Banana 2.1",
       "provider": "Google",
-      "score": 1160,
+      "score": 1159,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -169,7 +169,7 @@
     {
       "name": "MAI-Image-2.6",
       "provider": "Microsoft AI",
-      "score": 1151,
+      "score": 1152,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -183,17 +183,17 @@
       "delta": "-"
     },
     {
-      "name": "FLUX 3 Image",
-      "provider": "Black Forest Labs",
-      "score": 1116,
+      "name": "Muse Image",
+      "provider": "Meta",
+      "score": 1115,
       "price": null,
       "speed": null,
       "delta": "-"
     },
     {
-      "name": "Muse Image",
-      "provider": "Meta",
-      "score": 1114,
+      "name": "FLUX 3 Image",
+      "provider": "Black Forest Labs",
+      "score": 1115,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -201,7 +201,7 @@
     {
       "name": "GPT Image 1.5 (high)",
       "provider": "OpenAI",
-      "score": 1108,
+      "score": 1109,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -209,15 +209,15 @@
     {
       "name": "MAI-Image-2.6-Flash",
       "provider": "Microsoft AI",
-      "score": 1107,
+      "score": 1108,
       "price": null,
       "speed": null,
       "delta": "-"
     },
     {
-      "name": "MAI-Image-2.5",
-      "provider": "Microsoft AI",
-      "score": 1103,
+      "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+      "provider": "Google",
+      "score": 1104,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -229,7 +229,7 @@
       "provider": "Anthropic",
       "score": 57.6,
       "price": 8,
-      "speed": 97,
+      "speed": 96,
       "delta": "-"
     },
     {
@@ -237,7 +237,7 @@
       "provider": "Anthropic",
       "score": 56,
       "price": 4,
-      "speed": 133,
+      "speed": 132,
       "delta": "-"
     },
     {
@@ -253,7 +253,7 @@
       "provider": "Anthropic",
       "score": 53.4,
       "price": 20,
-      "speed": 67,
+      "speed": 65,
       "delta": "-"
     },
     {
@@ -261,7 +261,7 @@
       "provider": "OpenAI",
       "score": 52.7,
       "price": 20,
-      "speed": 61,
+      "speed": 54,
       "delta": "-"
     },
     {
@@ -277,7 +277,7 @@
       "provider": "Meta",
       "score": 52.4,
       "price": 8,
-      "speed": 95,
+      "speed": 109,
       "delta": "-"
     },
     {
@@ -285,7 +285,7 @@
       "provider": "OpenAI",
       "score": 51.8,
       "price": 4,
-      "speed": 61,
+      "speed": 57,
       "delta": "-"
     },
     {
@@ -309,7 +309,7 @@
       "provider": "Meta",
       "score": 48.1,
       "price": 2,
-      "speed": 110,
+      "speed": 112,
       "delta": "-"
     },
     {
@@ -335,15 +335,7 @@
       "provider": "Google",
       "score": 222.5,
       "price": 0.04,
-      "speed": 28,
-      "delta": "-"
-    },
-    {
-      "name": "Ling-3.0-flash-VL",
-      "provider": "InclusionAI",
-      "score": 221.6,
-      "price": 0.11,
-      "speed": 141,
+      "speed": 31,
       "delta": "-"
     },
     {
@@ -351,7 +343,7 @@
       "provider": "Alibaba",
       "score": 218.3,
       "price": 0.06,
-      "speed": 29,
+      "speed": 25,
       "delta": "-"
     },
     {
@@ -367,7 +359,7 @@
       "provider": "Xiaomi",
       "score": 216.6,
       "price": 0.18,
-      "speed": 48,
+      "speed": 51,
       "delta": "-"
     },
     {
@@ -375,7 +367,7 @@
       "provider": "InclusionAI",
       "score": 203.6,
       "price": 0.11,
-      "speed": 315,
+      "speed": 281,
       "delta": "-"
     },
     {
@@ -383,7 +375,7 @@
       "provider": "OpenAI",
       "score": 190.5,
       "price": 0.2,
-      "speed": 139,
+      "speed": 128,
       "delta": "-"
     },
     {
@@ -415,7 +407,15 @@
       "provider": "Alibaba",
       "score": 173,
       "price": 0.23,
-      "speed": 55,
+      "speed": 54,
+      "delta": "-"
+    },
+    {
+      "name": "DeepSeek V4 Flash 0420 (High)",
+      "provider": "DeepSeek",
+      "score": 171.8,
+      "price": 0.14,
+      "speed": null,
       "delta": "-"
     }
   ],
@@ -425,7 +425,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 97,
+        "speed": 96,
         "price": 8
       }
     },
@@ -449,7 +449,7 @@
     }
   },
   "geminiAnalysis": {
-    "trends": "El mercado de IA muestra una aceleración notable con 45 modelos nuevos esta semana. Anthropic retiene el liderazgo en desarrollo técnico con Claude Fable 5.1 (81.6 pts), aunque OpenAI ejerce presión con GPT-5.6 Sol a menos de la mitad del precio. En generación de imagen, OpenAI ejerce un monopolio total ocupando los tres primeros puestos con la familia GPT Image 2.5. Mientras tanto, Tencent sacude la industria al posicionar Hy3-preview como el referente absoluto en relación coste-rendimiento, ofreciendo razonamiento competitivo a un coste disruptivo de 0.1.",
-    "recommendations": "Programación: Elige Claude Fable 5.1 para desarrollo crítico y máxima precisión, o GPT-5.6 Sol para proyectos con presupuestos ajustados.\nImagen: Despliega GPT Image 2.5 Sunburst al ser el líder indiscutible en calidad gráfica y consistencia visual.\nCalidad-Precio: Adopta Hy3-preview de Tencent para flujos de razonamiento masivo donde el retorno de inversión y el bajo coste sean esenciales."
+    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
+    "recommendations": "Error al generar recomendaciones."
   }
 }
