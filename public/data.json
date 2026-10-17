@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-10-16T17:18:11.122Z",
+  "lastUpdated": "2026-10-17T16:17:22.949Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 69,
+      "speed": 70,
       "delta": "-"
     },
     "bestImageModel": {
       "name": "GPT Image 2.5 Sunburst (max)",
       "provider": "OpenAI",
-      "score": 1218,
+      "score": 1220,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -22,7 +22,7 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 119,
+      "speed": 120,
       "delta": "-"
     },
     "newModelsThisWeek": 49
@@ -33,7 +33,7 @@
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 69,
+      "speed": 70,
       "delta": "-"
     },
     {
@@ -57,7 +57,7 @@
       "provider": "OpenAI",
       "score": 77.1,
       "price": 20,
-      "speed": 48,
+      "speed": 54,
       "delta": "-"
     },
     {
@@ -73,7 +73,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 118,
+      "speed": 122,
       "delta": "-"
     },
     {
@@ -89,7 +89,7 @@
       "provider": "Meta",
       "score": 76.5,
       "price": 2,
-      "speed": 376,
+      "speed": 231,
       "delta": "-"
     },
     {
@@ -97,7 +97,7 @@
       "provider": "Google",
       "score": 76.3,
       "price": 1.5,
-      "speed": 138,
+      "speed": 139,
       "delta": "-"
     },
     {
@@ -105,7 +105,7 @@
       "provider": "Alibaba",
       "score": 76.2,
       "price": 3,
-      "speed": 38,
+      "speed": 37,
       "delta": "-"
     },
     {
@@ -113,7 +113,7 @@
       "provider": "Kimi",
       "score": 76.2,
       "price": 6,
-      "speed": 44,
+      "speed": 42,
       "delta": "-"
     },
     {
@@ -129,7 +129,7 @@
     {
       "name": "GPT Image 2.5 Sunburst (max)",
       "provider": "OpenAI",
-      "score": 1218,
+      "score": 1220,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -145,7 +145,7 @@
     {
       "name": "GPT Image 2 (high)",
       "provider": "OpenAI",
-      "score": 1185,
+      "score": 1186,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -153,7 +153,7 @@
     {
       "name": "Nano Banana 2.1",
       "provider": "Google",
-      "score": 1172,
+      "score": 1174,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -161,7 +161,7 @@
     {
       "name": "Grok Imagine Image 2.0",
       "provider": "SpaceXAI",
-      "score": 1165,
+      "score": 1167,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -169,7 +169,7 @@
     {
       "name": "MAI-Image-2.6",
       "provider": "Microsoft AI",
-      "score": 1165,
+      "score": 1166,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -177,7 +177,7 @@
     {
       "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
       "provider": "Google",
-      "score": 1139,
+      "score": 1140,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -193,7 +193,7 @@
     {
       "name": "GPT Image 1.5 (high)",
       "provider": "OpenAI",
-      "score": 1122,
+      "score": 1123,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -201,15 +201,7 @@
     {
       "name": "MAI-Image-2.6-Flash",
       "provider": "Microsoft AI",
-      "score": 1117,
-      "price": null,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "FLUX 3 Image",
-      "provider": "Black Forest Labs",
-      "score": 1115,
+      "score": 1119,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -217,7 +209,15 @@
     {
       "name": "MAI-Image-2.5",
       "provider": "Microsoft AI",
-      "score": 1115,
+      "score": 1116,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "FLUX 3 Image",
+      "provider": "Black Forest Labs",
+      "score": 1116,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -229,7 +229,7 @@
       "provider": "Anthropic",
       "score": 57.6,
       "price": 8,
-      "speed": 98,
+      "speed": 96,
       "delta": "-"
     },
     {
@@ -237,7 +237,7 @@
       "provider": "Anthropic",
       "score": 56,
       "price": 4,
-      "speed": 143,
+      "speed": 139,
       "delta": "-"
     },
     {
@@ -253,7 +253,7 @@
       "provider": "Anthropic",
       "score": 53.4,
       "price": 20,
-      "speed": 69,
+      "speed": 70,
       "delta": "-"
     },
     {
@@ -261,7 +261,7 @@
       "provider": "OpenAI",
       "score": 52.7,
       "price": 20,
-      "speed": 56,
+      "speed": 61,
       "delta": "-"
     },
     {
@@ -269,7 +269,7 @@
       "provider": "Google",
       "score": 52.6,
       "price": 4,
-      "speed": 99,
+      "speed": null,
       "delta": "-"
     },
     {
@@ -277,7 +277,7 @@
       "provider": "Meta",
       "score": 52.4,
       "price": 8,
-      "speed": 184,
+      "speed": 179,
       "delta": "-"
     },
     {
@@ -285,7 +285,7 @@
       "provider": "OpenAI",
       "score": 51.8,
       "price": 4,
-      "speed": 60,
+      "speed": 55,
       "delta": "-"
     },
     {
@@ -309,7 +309,7 @@
       "provider": "Meta",
       "score": 48.1,
       "price": 2,
-      "speed": 130,
+      "speed": 113,
       "delta": "-"
     },
     {
@@ -327,7 +327,7 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 119,
+      "speed": 120,
       "delta": "-"
     },
     {
@@ -343,7 +343,7 @@
       "provider": "Google",
       "score": 222.5,
       "price": 0.04,
-      "speed": 42,
+      "speed": 41,
       "delta": "-"
     },
     {
@@ -351,7 +351,7 @@
       "provider": "Alibaba",
       "score": 218.3,
       "price": 0.06,
-      "speed": 12,
+      "speed": 11,
       "delta": "-"
     },
     {
@@ -359,7 +359,7 @@
       "provider": "Anthropic",
       "score": 217,
       "price": 0.2,
-      "speed": 241,
+      "speed": 243,
       "delta": "-"
     },
     {
@@ -367,7 +367,7 @@
       "provider": "Xiaomi",
       "score": 216.6,
       "price": 0.18,
-      "speed": 51,
+      "speed": 56,
       "delta": "-"
     },
     {
@@ -375,7 +375,7 @@
       "provider": "InclusionAI",
       "score": 203.6,
       "price": 0.11,
-      "speed": 264,
+      "speed": 253,
       "delta": "-"
     },
     {
@@ -383,7 +383,7 @@
       "provider": "OpenAI",
       "score": 190.5,
       "price": 0.2,
-      "speed": 128,
+      "speed": 126,
       "delta": "-"
     },
     {
@@ -399,7 +399,7 @@
       "provider": "Z AI",
       "score": 176.4,
       "price": 0.24,
-      "speed": 65,
+      "speed": 77,
       "delta": "-"
     },
     {
@@ -407,7 +407,7 @@
       "provider": "IBM",
       "score": 175,
       "price": 0.05,
-      "speed": 231,
+      "speed": 232,
       "delta": "-"
     },
     {
@@ -415,7 +415,7 @@
       "provider": "Alibaba",
       "score": 173,
       "price": 0.23,
-      "speed": 47,
+      "speed": 52,
       "delta": "-"
     }
   ],
@@ -425,7 +425,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 98,
+        "speed": 96,
         "price": 8
       }
     },
@@ -434,7 +434,7 @@
       "metrics": {
         "intelligence": 53,
         "coding": "N/A",
-        "speed": 99,
+        "speed": "N/A",
         "price": 4
       }
     },
@@ -449,7 +449,7 @@
     }
   },
   "geminiAnalysis": {
-    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
-    "recommendations": "Error al generar recomendaciones."
+    "trends": "El ecosistema de IA muestra una aceleración notable con 49 nuevos modelos esta semana, consolidando una clara especialización de mercado. Anthropic lidera el segmento de desarrollo de software con Claude Fable 5.1, superando a OpenAI en capacidades analíticas y de código complejo a pesar de un precio superior. En contraste, OpenAI domina de forma absoluta la generación visual copando el podio con la familia GPT Image 2.5. Simultáneamente, la irrupción de alternativas como Agnes 2.5 Pro Beta de Sapiens AI demuestra que la presión de costes y latencia en producción está forzando un nuevo estándar de hiper-eficiencia económica fuera de los proveedores tradicionales.",
+    "recommendations": "Programación: Claude Fable 5.1 es la elección indispensable para arquitectura de software y tareas críticas donde la máxima precisión justifica su tarifa premium.\nImagen: GPT Image 2.5 Sunburst se posiciona como el estándar definitivo para generación sintética y producción visual de alta fidelidad.\nCalidad-Precio: Agnes 2.5 Pro Beta es imbatible para flujos automatizados a gran escala, ofreciendo alta velocidad a una fracción mínima del coste habitual."
   }
 }
