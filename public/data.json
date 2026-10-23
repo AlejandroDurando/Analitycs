@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-22T17:55:08.408Z",
+  "lastUpdated": "2026-10-23T17:49:42.722Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 71,
+      "speed": 70,
       "delta": "-"
     },
     "bestImageModel": {
@@ -22,10 +22,10 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 110,
+      "speed": 108,
       "delta": "-"
     },
-    "newModelsThisWeek": 27
+    "newModelsThisWeek": 29
   },
   "codingModels": [
     {
@@ -33,7 +33,7 @@
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 71,
+      "speed": 70,
       "delta": "-"
     },
     {
@@ -57,7 +57,7 @@
       "provider": "OpenAI",
       "score": 77.1,
       "price": 20,
-      "speed": 52,
+      "speed": 50,
       "delta": "-"
     },
     {
@@ -73,7 +73,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 141,
+      "speed": 126,
       "delta": "-"
     },
     {
@@ -89,7 +89,7 @@
       "provider": "Meta",
       "score": 76.5,
       "price": 2,
-      "speed": 335,
+      "speed": 377,
       "delta": "-"
     },
     {
@@ -97,7 +97,7 @@
       "provider": "Google",
       "score": 76.3,
       "price": 1.5,
-      "speed": 148,
+      "speed": 127,
       "delta": "-"
     },
     {
@@ -229,7 +229,7 @@
       "provider": "Anthropic",
       "score": 57.6,
       "price": 8,
-      "speed": 98,
+      "speed": 96,
       "delta": "-"
     },
     {
@@ -237,7 +237,7 @@
       "provider": "Anthropic",
       "score": 56,
       "price": 4,
-      "speed": 139,
+      "speed": 138,
       "delta": "-"
     },
     {
@@ -249,11 +249,19 @@
       "delta": "-"
     },
     {
+      "name": "Kimi K3.1 Pro",
+      "provider": "Kimi",
+      "score": 55.1,
+      "price": 4,
+      "speed": null,
+      "delta": "-"
+    },
+    {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
       "provider": "Anthropic",
       "score": 53.4,
       "price": 20,
-      "speed": 71,
+      "speed": 70,
       "delta": "-"
     },
     {
@@ -261,7 +269,7 @@
       "provider": "OpenAI",
       "score": 52.7,
       "price": 20,
-      "speed": 64,
+      "speed": 61,
       "delta": "-"
     },
     {
@@ -277,7 +285,7 @@
       "provider": "Meta",
       "score": 52.4,
       "price": 8,
-      "speed": 175,
+      "speed": 146,
       "delta": "-"
     },
     {
@@ -285,7 +293,7 @@
       "provider": "OpenAI",
       "score": 51.8,
       "price": 4,
-      "speed": 58,
+      "speed": 57,
       "delta": "-"
     },
     {
@@ -309,15 +317,7 @@
       "provider": "Meta",
       "score": 48.1,
       "price": 2,
-      "speed": 115,
-      "delta": "-"
-    },
-    {
-      "name": "GPT-6 Sol (Max)",
-      "provider": "OpenAI",
-      "score": 47.6,
-      "price": 4,
-      "speed": null,
+      "speed": 96,
       "delta": "-"
     }
   ],
@@ -327,7 +327,7 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 110,
+      "speed": 108,
       "delta": "-"
     },
     {
@@ -343,7 +343,7 @@
       "provider": "Google",
       "score": 222.5,
       "price": 0.04,
-      "speed": 44,
+      "speed": 47,
       "delta": "-"
     },
     {
@@ -351,7 +351,7 @@
       "provider": "Alibaba",
       "score": 218.3,
       "price": 0.06,
-      "speed": 16,
+      "speed": 15,
       "delta": "-"
     },
     {
@@ -359,7 +359,7 @@
       "provider": "Anthropic",
       "score": 217,
       "price": 0.2,
-      "speed": 240,
+      "speed": 241,
       "delta": "-"
     },
     {
@@ -367,15 +367,7 @@
       "provider": "Xiaomi",
       "score": 216.6,
       "price": 0.18,
-      "speed": 51,
-      "delta": "-"
-    },
-    {
-      "name": "Ling-3.0-flash-Fin",
-      "provider": "InclusionAI",
-      "score": 203.6,
-      "price": 0.11,
-      "speed": null,
+      "speed": 49,
       "delta": "-"
     },
     {
@@ -391,7 +383,7 @@
       "provider": "OpenAI",
       "score": 190.5,
       "price": 0.2,
-      "speed": 138,
+      "speed": 142,
       "delta": "-"
     },
     {
@@ -407,7 +399,7 @@
       "provider": "Z AI",
       "score": 176.4,
       "price": 0.24,
-      "speed": 75,
+      "speed": 69,
       "delta": "-"
     },
     {
@@ -415,7 +407,15 @@
       "provider": "IBM",
       "score": 175,
       "price": 0.05,
-      "speed": 72,
+      "speed": 101,
+      "delta": "-"
+    },
+    {
+      "name": "Qwen3.8-Flash-Next",
+      "provider": "Alibaba",
+      "score": 173,
+      "price": 0.23,
+      "speed": 49,
       "delta": "-"
     }
   ],
@@ -425,7 +425,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 98,
+        "speed": 96,
         "price": 8
       }
     },
@@ -449,7 +449,7 @@
     }
   },
   "geminiAnalysis": {
-    "trends": "El mercado de IA vive una intensa aceleración con 27 nuevos modelos esta semana y una clara fragmentación estratégica. Anthropic asume el liderazgo en ingeniería de software con Claude Fable 5.1 (81.6 pts), situándose en la cúspide del rendimiento para desarrollo técnico, aunque a un costo premium ($20). En contraparte, OpenAI mantiene un monopolio absoluto en síntesis visual ocupando todo el podio con la serie GPT Image 2.5, liderada por Sunburst. Finalmente, Sapiens AI sacude la industria en costo-eficiencia con Agnes 2.5 Pro Beta ($0.15 y 110 t/s), demostrando que la batalla ya no solo se libra en fuerza bruta, sino en la democratización del acceso por token.",
-    "recommendations": "Programación: Claude Fable 5.1 es la opción definitiva para código crítico y arquitectura compleja; si el presupuesto es prioritario, GPT-5.6 Sol ofrece un gran equilibrio por menos de la mitad del precio.\nImagen: GPT Image 2.5 Sunburst es la recomendación indiscutible para proyectos que requieran la máxima fidelidad visual y coherencia estética.\nCalidad-Precio: Agnes 2.5 Pro Beta es la elección obligada para despliegues masivos y automatizaciones, combinando velocidad extrema (110 t/s) con un costo marginal imbatible ($0.15)."
+    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
+    "recommendations": "Error al generar recomendaciones."
   }
 }
