@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T17:49:42.722Z",
+  "lastUpdated": "2026-10-24T16:31:11.428Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
@@ -22,7 +22,7 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 108,
+      "speed": 118,
       "delta": "-"
     },
     "newModelsThisWeek": 29
@@ -89,7 +89,7 @@
       "provider": "Meta",
       "score": 76.5,
       "price": 2,
-      "speed": 377,
+      "speed": 711,
       "delta": "-"
     },
     {
@@ -229,7 +229,7 @@
       "provider": "Anthropic",
       "score": 57.6,
       "price": 8,
-      "speed": 96,
+      "speed": 95,
       "delta": "-"
     },
     {
@@ -253,7 +253,7 @@
       "provider": "Kimi",
       "score": 55.1,
       "price": 4,
-      "speed": null,
+      "speed": 59,
       "delta": "-"
     },
     {
@@ -269,7 +269,7 @@
       "provider": "OpenAI",
       "score": 52.7,
       "price": 20,
-      "speed": 61,
+      "speed": 63,
       "delta": "-"
     },
     {
@@ -277,7 +277,7 @@
       "provider": "Google",
       "score": 52.6,
       "price": 4,
-      "speed": 80,
+      "speed": 79,
       "delta": "-"
     },
     {
@@ -285,7 +285,7 @@
       "provider": "Meta",
       "score": 52.4,
       "price": 8,
-      "speed": 146,
+      "speed": 139,
       "delta": "-"
     },
     {
@@ -293,7 +293,7 @@
       "provider": "OpenAI",
       "score": 51.8,
       "price": 4,
-      "speed": 57,
+      "speed": 56,
       "delta": "-"
     },
     {
@@ -317,7 +317,7 @@
       "provider": "Meta",
       "score": 48.1,
       "price": 2,
-      "speed": 96,
+      "speed": 125,
       "delta": "-"
     }
   ],
@@ -327,7 +327,7 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 108,
+      "speed": 118,
       "delta": "-"
     },
     {
@@ -343,7 +343,7 @@
       "provider": "Google",
       "score": 222.5,
       "price": 0.04,
-      "speed": 47,
+      "speed": 51,
       "delta": "-"
     },
     {
@@ -351,7 +351,7 @@
       "provider": "Alibaba",
       "score": 218.3,
       "price": 0.06,
-      "speed": 15,
+      "speed": 13,
       "delta": "-"
     },
     {
@@ -367,7 +367,7 @@
       "provider": "Xiaomi",
       "score": 216.6,
       "price": 0.18,
-      "speed": 49,
+      "speed": 48,
       "delta": "-"
     },
     {
@@ -383,7 +383,7 @@
       "provider": "OpenAI",
       "score": 190.5,
       "price": 0.2,
-      "speed": 142,
+      "speed": 135,
       "delta": "-"
     },
     {
@@ -399,7 +399,7 @@
       "provider": "Z AI",
       "score": 176.4,
       "price": 0.24,
-      "speed": 69,
+      "speed": 63,
       "delta": "-"
     },
     {
@@ -407,7 +407,7 @@
       "provider": "IBM",
       "score": 175,
       "price": 0.05,
-      "speed": 101,
+      "speed": 72,
       "delta": "-"
     },
     {
@@ -425,7 +425,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 96,
+        "speed": 95,
         "price": 8
       }
     },
@@ -434,7 +434,7 @@
       "metrics": {
         "intelligence": 53,
         "coding": "N/A",
-        "speed": 80,
+        "speed": 79,
         "price": 4
       }
     },
