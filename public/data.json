@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-24T16:31:11.428Z",
+  "lastUpdated": "2026-10-25T17:01:01.110Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 70,
+      "speed": 67,
       "delta": "-"
     },
     "bestImageModel": {
@@ -22,7 +22,7 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 118,
+      "speed": 123,
       "delta": "-"
     },
     "newModelsThisWeek": 29
@@ -33,7 +33,7 @@
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 70,
+      "speed": 67,
       "delta": "-"
     },
     {
@@ -57,7 +57,7 @@
       "provider": "OpenAI",
       "score": 77.1,
       "price": 20,
-      "speed": 50,
+      "speed": 49,
       "delta": "-"
     },
     {
@@ -73,7 +73,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 126,
+      "speed": 119,
       "delta": "-"
     },
     {
@@ -89,7 +89,7 @@
       "provider": "Meta",
       "score": 76.5,
       "price": 2,
-      "speed": 711,
+      "speed": null,
       "delta": "-"
     },
     {
@@ -97,7 +97,7 @@
       "provider": "Google",
       "score": 76.3,
       "price": 1.5,
-      "speed": 127,
+      "speed": 122,
       "delta": "-"
     },
     {
@@ -113,7 +113,7 @@
       "provider": "Kimi",
       "score": 76.2,
       "price": 6,
-      "speed": 39,
+      "speed": 40,
       "delta": "-"
     },
     {
@@ -237,7 +237,7 @@
       "provider": "Anthropic",
       "score": 56,
       "price": 4,
-      "speed": 138,
+      "speed": 140,
       "delta": "-"
     },
     {
@@ -253,7 +253,7 @@
       "provider": "Kimi",
       "score": 55.1,
       "price": 4,
-      "speed": 59,
+      "speed": 50,
       "delta": "-"
     },
     {
@@ -261,7 +261,7 @@
       "provider": "Anthropic",
       "score": 53.4,
       "price": 20,
-      "speed": 70,
+      "speed": 67,
       "delta": "-"
     },
     {
@@ -269,7 +269,7 @@
       "provider": "OpenAI",
       "score": 52.7,
       "price": 20,
-      "speed": 63,
+      "speed": 60,
       "delta": "-"
     },
     {
@@ -277,7 +277,7 @@
       "provider": "Google",
       "score": 52.6,
       "price": 4,
-      "speed": 79,
+      "speed": 78,
       "delta": "-"
     },
     {
@@ -285,7 +285,7 @@
       "provider": "Meta",
       "score": 52.4,
       "price": 8,
-      "speed": 139,
+      "speed": 117,
       "delta": "-"
     },
     {
@@ -317,7 +317,7 @@
       "provider": "Meta",
       "score": 48.1,
       "price": 2,
-      "speed": 125,
+      "speed": null,
       "delta": "-"
     }
   ],
@@ -327,7 +327,7 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 118,
+      "speed": 123,
       "delta": "-"
     },
     {
@@ -343,7 +343,7 @@
       "provider": "Google",
       "score": 222.5,
       "price": 0.04,
-      "speed": 51,
+      "speed": 54,
       "delta": "-"
     },
     {
@@ -351,7 +351,7 @@
       "provider": "Alibaba",
       "score": 218.3,
       "price": 0.06,
-      "speed": 13,
+      "speed": 15,
       "delta": "-"
     },
     {
@@ -359,7 +359,7 @@
       "provider": "Anthropic",
       "score": 217,
       "price": 0.2,
-      "speed": 241,
+      "speed": 240,
       "delta": "-"
     },
     {
@@ -367,7 +367,7 @@
       "provider": "Xiaomi",
       "score": 216.6,
       "price": 0.18,
-      "speed": 48,
+      "speed": 50,
       "delta": "-"
     },
     {
@@ -383,7 +383,7 @@
       "provider": "OpenAI",
       "score": 190.5,
       "price": 0.2,
-      "speed": 135,
+      "speed": 130,
       "delta": "-"
     },
     {
@@ -399,7 +399,7 @@
       "provider": "Z AI",
       "score": 176.4,
       "price": 0.24,
-      "speed": 63,
+      "speed": 64,
       "delta": "-"
     },
     {
@@ -407,7 +407,7 @@
       "provider": "IBM",
       "score": 175,
       "price": 0.05,
-      "speed": 72,
+      "speed": 50,
       "delta": "-"
     },
     {
@@ -434,7 +434,7 @@
       "metrics": {
         "intelligence": 53,
         "coding": "N/A",
-        "speed": 79,
+        "speed": 78,
         "price": 4
       }
     },
