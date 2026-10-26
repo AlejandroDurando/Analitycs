@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-25T17:01:01.110Z",
+  "lastUpdated": "2026-10-26T19:07:58.762Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 67,
+      "speed": 66,
       "delta": "-"
     },
     "bestImageModel": {
@@ -22,10 +22,10 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 123,
+      "speed": 121,
       "delta": "-"
     },
-    "newModelsThisWeek": 29
+    "newModelsThisWeek": 35
   },
   "codingModels": [
     {
@@ -33,7 +33,7 @@
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 67,
+      "speed": 66,
       "delta": "-"
     },
     {
@@ -57,7 +57,7 @@
       "provider": "OpenAI",
       "score": 77.1,
       "price": 20,
-      "speed": 49,
+      "speed": 52,
       "delta": "-"
     },
     {
@@ -73,7 +73,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 119,
+      "speed": 129,
       "delta": "-"
     },
     {
@@ -97,7 +97,7 @@
       "provider": "Google",
       "score": 76.3,
       "price": 1.5,
-      "speed": 122,
+      "speed": 119,
       "delta": "-"
     },
     {
@@ -113,7 +113,7 @@
       "provider": "Kimi",
       "score": 76.2,
       "price": 6,
-      "speed": 40,
+      "speed": null,
       "delta": "-"
     },
     {
@@ -229,7 +229,7 @@
       "provider": "Anthropic",
       "score": 57.6,
       "price": 8,
-      "speed": 95,
+      "speed": 96,
       "delta": "-"
     },
     {
@@ -237,7 +237,7 @@
       "provider": "Anthropic",
       "score": 56,
       "price": 4,
-      "speed": 140,
+      "speed": 138,
       "delta": "-"
     },
     {
@@ -253,7 +253,7 @@
       "provider": "Kimi",
       "score": 55.1,
       "price": 4,
-      "speed": 50,
+      "speed": 46,
       "delta": "-"
     },
     {
@@ -261,7 +261,7 @@
       "provider": "Anthropic",
       "score": 53.4,
       "price": 20,
-      "speed": 67,
+      "speed": 66,
       "delta": "-"
     },
     {
@@ -277,7 +277,7 @@
       "provider": "Google",
       "score": 52.6,
       "price": 4,
-      "speed": 78,
+      "speed": 77,
       "delta": "-"
     },
     {
@@ -285,7 +285,7 @@
       "provider": "Meta",
       "score": 52.4,
       "price": 8,
-      "speed": 117,
+      "speed": 144,
       "delta": "-"
     },
     {
@@ -293,7 +293,7 @@
       "provider": "OpenAI",
       "score": 51.8,
       "price": 4,
-      "speed": 56,
+      "speed": 59,
       "delta": "-"
     },
     {
@@ -313,8 +313,8 @@
       "delta": "-"
     },
     {
-      "name": "Muse Spark 1.3 (Max)",
-      "provider": "Meta",
+      "name": "GPT-6.1 Terra (Max)",
+      "provider": "OpenAI",
       "score": 48.1,
       "price": 2,
       "speed": null,
@@ -327,7 +327,7 @@
       "provider": "Sapiens AI",
       "score": 234.7,
       "price": 0.15,
-      "speed": 123,
+      "speed": 121,
       "delta": "-"
     },
     {
@@ -351,7 +351,7 @@
       "provider": "Alibaba",
       "score": 218.3,
       "price": 0.06,
-      "speed": 15,
+      "speed": 23,
       "delta": "-"
     },
     {
@@ -359,7 +359,7 @@
       "provider": "Anthropic",
       "score": 217,
       "price": 0.2,
-      "speed": 240,
+      "speed": 235,
       "delta": "-"
     },
     {
@@ -367,7 +367,7 @@
       "provider": "Xiaomi",
       "score": 216.6,
       "price": 0.18,
-      "speed": 50,
+      "speed": 53,
       "delta": "-"
     },
     {
@@ -383,7 +383,7 @@
       "provider": "OpenAI",
       "score": 190.5,
       "price": 0.2,
-      "speed": 130,
+      "speed": 121,
       "delta": "-"
     },
     {
@@ -399,7 +399,7 @@
       "provider": "Z AI",
       "score": 176.4,
       "price": 0.24,
-      "speed": 64,
+      "speed": 66,
       "delta": "-"
     },
     {
@@ -407,7 +407,7 @@
       "provider": "IBM",
       "score": 175,
       "price": 0.05,
-      "speed": 50,
+      "speed": 39,
       "delta": "-"
     },
     {
@@ -415,7 +415,7 @@
       "provider": "Alibaba",
       "score": 173,
       "price": 0.23,
-      "speed": 49,
+      "speed": 52,
       "delta": "-"
     }
   ],
@@ -425,7 +425,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 95,
+        "speed": 96,
         "price": 8
       }
     },
@@ -434,7 +434,7 @@
       "metrics": {
         "intelligence": 53,
         "coding": "N/A",
-        "speed": 78,
+        "speed": 77,
         "price": 4
       }
     },
