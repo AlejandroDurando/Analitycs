@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-26T19:07:58.762Z",
+  "lastUpdated": "2026-10-27T18:37:54.475Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
@@ -57,7 +57,7 @@
       "provider": "OpenAI",
       "score": 77.1,
       "price": 20,
-      "speed": 52,
+      "speed": 53,
       "delta": "-"
     },
     {
@@ -73,7 +73,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 129,
+      "speed": 125,
       "delta": "-"
     },
     {
@@ -97,7 +97,7 @@
       "provider": "Google",
       "score": 76.3,
       "price": 1.5,
-      "speed": 119,
+      "speed": 132,
       "delta": "-"
     },
     {
@@ -229,7 +229,7 @@
       "provider": "Anthropic",
       "score": 57.6,
       "price": 8,
-      "speed": 96,
+      "speed": 97,
       "delta": "-"
     },
     {
@@ -237,7 +237,7 @@
       "provider": "Anthropic",
       "score": 56,
       "price": 4,
-      "speed": 138,
+      "speed": 141,
       "delta": "-"
     },
     {
@@ -253,7 +253,7 @@
       "provider": "Kimi",
       "score": 55.1,
       "price": 4,
-      "speed": 46,
+      "speed": 38,
       "delta": "-"
     },
     {
@@ -269,7 +269,7 @@
       "provider": "OpenAI",
       "score": 52.7,
       "price": 20,
-      "speed": 60,
+      "speed": 64,
       "delta": "-"
     },
     {
@@ -277,7 +277,7 @@
       "provider": "Google",
       "score": 52.6,
       "price": 4,
-      "speed": 77,
+      "speed": 80,
       "delta": "-"
     },
     {
@@ -285,7 +285,7 @@
       "provider": "Meta",
       "score": 52.4,
       "price": 8,
-      "speed": 144,
+      "speed": 158,
       "delta": "-"
     },
     {
@@ -293,7 +293,7 @@
       "provider": "OpenAI",
       "score": 51.8,
       "price": 4,
-      "speed": 59,
+      "speed": 67,
       "delta": "-"
     },
     {
@@ -317,7 +317,7 @@
       "provider": "OpenAI",
       "score": 48.1,
       "price": 2,
-      "speed": null,
+      "speed": 91,
       "delta": "-"
     }
   ],
@@ -343,7 +343,7 @@
       "provider": "Google",
       "score": 222.5,
       "price": 0.04,
-      "speed": 54,
+      "speed": 44,
       "delta": "-"
     },
     {
@@ -359,7 +359,7 @@
       "provider": "Anthropic",
       "score": 217,
       "price": 0.2,
-      "speed": 235,
+      "speed": 239,
       "delta": "-"
     },
     {
@@ -367,7 +367,7 @@
       "provider": "Xiaomi",
       "score": 216.6,
       "price": 0.18,
-      "speed": 53,
+      "speed": 55,
       "delta": "-"
     },
     {
@@ -399,7 +399,7 @@
       "provider": "Z AI",
       "score": 176.4,
       "price": 0.24,
-      "speed": 66,
+      "speed": 75,
       "delta": "-"
     },
     {
@@ -407,7 +407,7 @@
       "provider": "IBM",
       "score": 175,
       "price": 0.05,
-      "speed": 39,
+      "speed": 48,
       "delta": "-"
     },
     {
@@ -415,7 +415,7 @@
       "provider": "Alibaba",
       "score": 173,
       "price": 0.23,
-      "speed": 52,
+      "speed": 53,
       "delta": "-"
     }
   ],
@@ -425,7 +425,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 96,
+        "speed": 97,
         "price": 8
       }
     },
@@ -434,7 +434,7 @@
       "metrics": {
         "intelligence": 53,
         "coding": "N/A",
-        "speed": 77,
+        "speed": 80,
         "price": 4
       }
     },
