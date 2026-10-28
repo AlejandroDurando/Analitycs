@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-27T18:37:54.475Z",
+  "lastUpdated": "2026-10-28T18:44:59.974Z",
   "kpis": {
     "bestCodingModel": {
       "name": "Claude Fable 5.1 (Max, Default Fallback)",
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 66,
+      "speed": 68,
       "delta": "-"
     },
     "bestImageModel": {
@@ -18,14 +18,14 @@
       "delta": "-"
     },
     "bestValueModel": {
-      "name": "Agnes 2.5 Pro Beta",
-      "provider": "Sapiens AI",
-      "score": 234.7,
-      "price": 0.15,
-      "speed": 121,
+      "name": "Claude Haiku 5.5 (Max)",
+      "provider": "Anthropic",
+      "score": 181,
+      "price": 0.2,
+      "speed": 235,
       "delta": "-"
     },
-    "newModelsThisWeek": 35
+    "newModelsThisWeek": 31
   },
   "codingModels": [
     {
@@ -33,7 +33,7 @@
       "provider": "Anthropic",
       "score": 81.6,
       "price": 20,
-      "speed": 66,
+      "speed": 68,
       "delta": "-"
     },
     {
@@ -57,7 +57,7 @@
       "provider": "OpenAI",
       "score": 77.1,
       "price": 20,
-      "speed": 53,
+      "speed": 56,
       "delta": "-"
     },
     {
@@ -73,15 +73,7 @@
       "provider": "OpenAI",
       "score": 76.7,
       "price": 4.5,
-      "speed": 125,
-      "delta": "-"
-    },
-    {
-      "name": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
-      "provider": "Anthropic",
-      "score": 76.5,
-      "price": 20,
-      "speed": null,
+      "speed": 129,
       "delta": "-"
     },
     {
@@ -93,11 +85,19 @@
       "delta": "-"
     },
     {
+      "name": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+      "provider": "Anthropic",
+      "score": 76.5,
+      "price": 20,
+      "speed": null,
+      "delta": "-"
+    },
+    {
       "name": "Gemini 3.8 Flash (High)",
       "provider": "Google",
       "score": 76.3,
       "price": 1.5,
-      "speed": 132,
+      "speed": 137,
       "delta": "-"
     },
     {
@@ -225,197 +225,197 @@
   ],
   "intelligenceModels": [
     {
+      "name": "Gemini 4 Carbon (High)",
+      "provider": "Google",
+      "score": 59.4,
+      "price": 8,
+      "speed": 106,
+      "delta": "-"
+    },
+    {
       "name": "Claude Opus 5.5 (Max, Default Fallback)",
       "provider": "Anthropic",
-      "score": 57.6,
+      "score": 58.4,
       "price": 8,
-      "speed": 97,
-      "delta": "-"
-    },
-    {
-      "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
-      "provider": "Anthropic",
-      "score": 56,
-      "price": 4,
-      "speed": 141,
-      "delta": "-"
-    },
-    {
-      "name": "Muse Wonder Full (Max)",
-      "provider": "Meta",
-      "score": 55.8,
-      "price": 0,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "Kimi K3.1 Pro",
-      "provider": "Kimi",
-      "score": 55.1,
-      "price": 4,
-      "speed": 38,
-      "delta": "-"
-    },
-    {
-      "name": "Claude Fable 5.1 (Max, Default Fallback)",
-      "provider": "Anthropic",
-      "score": 53.4,
-      "price": 20,
-      "speed": 66,
+      "speed": 96,
       "delta": "-"
     },
     {
       "name": "GPT-6 Astra (Max)",
       "provider": "OpenAI",
-      "score": 52.7,
+      "score": 56.9,
       "price": 20,
-      "speed": 64,
-      "delta": "-"
-    },
-    {
-      "name": "Gemini 4 Argon (High)",
-      "provider": "Google",
-      "score": 52.6,
-      "price": 4,
-      "speed": 80,
-      "delta": "-"
-    },
-    {
-      "name": "Muse Wonder (Max)",
-      "provider": "Meta",
-      "score": 52.4,
-      "price": 8,
-      "speed": 158,
+      "speed": 69,
       "delta": "-"
     },
     {
       "name": "GPT-6.1 Sol (Max)",
       "provider": "OpenAI",
-      "score": 51.8,
+      "score": 54.5,
       "price": 4,
-      "speed": 67,
+      "speed": 80,
       "delta": "-"
     },
     {
-      "name": "Claude Opus 5 (Max)",
+      "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
       "provider": "Anthropic",
-      "score": 50.8,
-      "price": 10,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
-      "provider": "Anthropic",
-      "score": 49.6,
-      "price": 20,
-      "speed": null,
+      "score": 54.2,
+      "price": 4,
+      "speed": 136,
       "delta": "-"
     },
     {
       "name": "GPT-6.1 Terra (Max)",
       "provider": "OpenAI",
-      "score": 48.1,
+      "score": 51,
       "price": 2,
       "speed": 91,
+      "delta": "-"
+    },
+    {
+      "name": "Gemini 4 Argon (High)",
+      "provider": "Google",
+      "score": 50.4,
+      "price": 8,
+      "speed": 82,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Wonder Full (Max)",
+      "provider": "Meta",
+      "score": 49.7,
+      "price": 0,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Fable 5.1 (Xhigh, Default Fallback)",
+      "provider": "Anthropic",
+      "score": 49.7,
+      "price": 20,
+      "speed": 61,
+      "delta": "-"
+    },
+    {
+      "name": "Kimi K3.1 Pro",
+      "provider": "Kimi",
+      "score": 46,
+      "price": 4,
+      "speed": 35,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Wonder (Max)",
+      "provider": "Meta",
+      "score": 43.3,
+      "price": 8,
+      "speed": 190,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Spark 1.3 (Max)",
+      "provider": "Meta",
+      "score": 36.4,
+      "price": 2,
+      "speed": null,
       "delta": "-"
     }
   ],
   "valueModels": [
     {
-      "name": "Agnes 2.5 Pro Beta",
-      "provider": "Sapiens AI",
-      "score": 234.7,
-      "price": 0.15,
-      "speed": 121,
-      "delta": "-"
-    },
-    {
-      "name": "Hy3-preview (Reasoning)",
-      "provider": "Tencent",
-      "score": 227,
-      "price": 0.1,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "Gemma 4 E4B (Reasoning)",
-      "provider": "Google",
-      "score": 222.5,
-      "price": 0.04,
-      "speed": 44,
-      "delta": "-"
-    },
-    {
-      "name": "Qwen3.5 4B (Reasoning)",
-      "provider": "Alibaba",
-      "score": 218.3,
-      "price": 0.06,
-      "speed": 23,
-      "delta": "-"
-    },
-    {
       "name": "Claude Haiku 5.5 (Max)",
       "provider": "Anthropic",
-      "score": 217,
+      "score": 181,
       "price": 0.2,
-      "speed": 239,
+      "speed": 235,
       "delta": "-"
     },
     {
       "name": "MiMo-V2.6-Flash",
       "provider": "Xiaomi",
-      "score": 216.6,
+      "score": 152.6,
       "price": 0.18,
-      "speed": 55,
-      "delta": "-"
-    },
-    {
-      "name": "DeepSeek V4 Flash 0731 (Max)",
-      "provider": "DeepSeek",
-      "score": 196,
-      "price": 0.18,
-      "speed": null,
+      "speed": 60,
       "delta": "-"
     },
     {
       "name": "GPT-6 Luna (Max)",
       "provider": "OpenAI",
-      "score": 190.5,
+      "score": 139,
       "price": 0.2,
-      "speed": 121,
+      "speed": 116,
       "delta": "-"
     },
     {
-      "name": "Ling 3.0 Flash",
+      "name": "MiniMax-M3.1-Flash",
+      "provider": "MiniMax",
+      "score": 110.3,
+      "price": 0.26,
+      "speed": 111,
+      "delta": "-"
+    },
+    {
+      "name": "Ling 3.1 Flash 1019",
       "provider": "InclusionAI",
-      "score": 181.1,
-      "price": 0.11,
+      "score": 65.6,
+      "price": 0.45,
       "speed": null,
       "delta": "-"
     },
     {
-      "name": "GLM-5.3-Flash",
-      "provider": "Z AI",
-      "score": 176.4,
-      "price": 0.24,
-      "speed": 75,
+      "name": "DeepSeek V4.1 Flash 1017 (Max)",
+      "provider": "DeepSeek",
+      "score": 61.9,
+      "price": 0.53,
+      "speed": 164,
       "delta": "-"
     },
     {
-      "name": "Granite 4.2 3B",
-      "provider": "IBM",
-      "score": 175,
-      "price": 0.05,
-      "speed": 48,
+      "name": "MiMo-V2.6-Pro",
+      "provider": "Xiaomi",
+      "score": 55,
+      "price": 0.54,
+      "speed": 49,
       "delta": "-"
     },
     {
-      "name": "Qwen3.8-Flash-Next",
-      "provider": "Alibaba",
-      "score": 173,
-      "price": 0.23,
-      "speed": 53,
+      "name": "Nemotron 3.5 Super VL",
+      "provider": "NVIDIA",
+      "score": 43.5,
+      "price": 0.31,
+      "speed": 418,
+      "delta": "-"
+    },
+    {
+      "name": "MiniMax-M3",
+      "provider": "MiniMax",
+      "score": 35.6,
+      "price": 0.53,
+      "speed": 103,
+      "delta": "-"
+    },
+    {
+      "name": "Beam 1.0",
+      "provider": "Reflection",
+      "score": 29.5,
+      "price": 0.6,
+      "speed": 365,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-6.1 Terra (Max)",
+      "provider": "OpenAI",
+      "score": 25.5,
+      "price": 2,
+      "speed": 91,
+      "delta": "-"
+    },
+    {
+      "name": "Inkling Small",
+      "provider": "Thinking Machines",
+      "score": 24.6,
+      "price": 0.53,
+      "speed": 236,
       "delta": "-"
     }
   ],
@@ -425,23 +425,23 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 97,
+        "speed": 96,
         "price": 8
       }
     },
     "google": {
-      "name": "Gemini 4 Argon (High)",
+      "name": "Gemini 4 Carbon (High)",
       "metrics": {
-        "intelligence": 53,
+        "intelligence": 59,
         "coding": "N/A",
-        "speed": 80,
-        "price": 4
+        "speed": 106,
+        "price": 8
       }
     },
     "openSource": {
       "name": "Muse Wonder Full (Max)",
       "metrics": {
-        "intelligence": 56,
+        "intelligence": 50,
         "coding": "N/A",
         "speed": "N/A",
         "price": "N/A"

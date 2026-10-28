@@ -1,0 +1,455 @@
+{
+  "lastUpdated": "2026-10-28T18:44:59.974Z",
+  "kpis": {
+    "bestCodingModel": {
+      "name": "Claude Fable 5.1 (Max, Default Fallback)",
+      "provider": "Anthropic",
+      "score": 81.6,
+      "price": 20,
+      "speed": 68,
+      "delta": "-"
+    },
+    "bestImageModel": {
+      "name": "GPT Image 2.5 Sunburst (max)",
+      "provider": "OpenAI",
+      "score": 1222,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    "bestValueModel": {
+      "name": "Claude Haiku 5.5 (Max)",
+      "provider": "Anthropic",
+      "score": 181,
+      "price": 0.2,
+      "speed": 235,
+      "delta": "-"
+    },
+    "newModelsThisWeek": 31
+  },
+  "codingModels": [
+    {
+      "name": "Claude Fable 5.1 (Max, Default Fallback)",
+      "provider": "Anthropic",
+      "score": 81.6,
+      "price": 20,
+      "speed": 68,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Sol (Xhigh)",
+      "provider": "OpenAI",
+      "score": 78.3,
+      "price": 8,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 5 (Max)",
+      "provider": "Anthropic",
+      "score": 78,
+      "price": 10,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-6 Astra (High)",
+      "provider": "OpenAI",
+      "score": 77.1,
+      "price": 20,
+      "speed": 56,
+      "delta": "-"
+    },
+    {
+      "name": "Grok 4.6 (High)",
+      "provider": "SpaceXAI",
+      "score": 76.8,
+      "price": 3,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-5.6 Terra (Max)",
+      "provider": "OpenAI",
+      "score": 76.7,
+      "price": 4.5,
+      "speed": 129,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Spark 1.3 (Xhigh)",
+      "provider": "Meta",
+      "score": 76.5,
+      "price": 2,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+      "provider": "Anthropic",
+      "score": 76.5,
+      "price": 20,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Gemini 3.8 Flash (High)",
+      "provider": "Google",
+      "score": 76.3,
+      "price": 1.5,
+      "speed": 137,
+      "delta": "-"
+    },
+    {
+      "name": "Qwen3.8 Max (0902)",
+      "provider": "Alibaba",
+      "score": 76.2,
+      "price": 3,
+      "speed": 40,
+      "delta": "-"
+    },
+    {
+      "name": "Kimi K3 (Max)",
+      "provider": "Kimi",
+      "score": 76.2,
+      "price": 6,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Gemini 3.7 Flash (High)",
+      "provider": "Google",
+      "score": 76.1,
+      "price": 1.5,
+      "speed": null,
+      "delta": "-"
+    }
+  ],
+  "imageModels": [
+    {
+      "name": "GPT Image 2.5 Sunburst (max)",
+      "provider": "OpenAI",
+      "score": 1222,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "GPT Image 2.5 Flare (max)",
+      "provider": "OpenAI",
+      "score": 1207,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "GPT Image 2 (high)",
+      "provider": "OpenAI",
+      "score": 1186,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Nano Banana 2.1",
+      "provider": "Google",
+      "score": 1176,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "MAI-Image-2.6",
+      "provider": "Microsoft AI",
+      "score": 1166,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Grok Imagine Image 2.0",
+      "provider": "SpaceXAI",
+      "score": 1166,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+      "provider": "Google",
+      "score": 1140,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Image",
+      "provider": "Meta",
+      "score": 1127,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "GPT Image 1.5 (high)",
+      "provider": "OpenAI",
+      "score": 1123,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "MAI-Image-2.6-Flash",
+      "provider": "Microsoft AI",
+      "score": 1119,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+      "provider": "Google",
+      "score": 1118,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "MAI-Image-2.5",
+      "provider": "Microsoft AI",
+      "score": 1118,
+      "price": null,
+      "speed": null,
+      "delta": "-"
+    }
+  ],
+  "intelligenceModels": [
+    {
+      "name": "Gemini 4 Carbon (High)",
+      "provider": "Google",
+      "score": 59.4,
+      "price": 8,
+      "speed": 106,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Opus 5.5 (Max, Default Fallback)",
+      "provider": "Anthropic",
+      "score": 58.4,
+      "price": 8,
+      "speed": 96,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-6 Astra (Max)",
+      "provider": "OpenAI",
+      "score": 56.9,
+      "price": 20,
+      "speed": 69,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-6.1 Sol (Max)",
+      "provider": "OpenAI",
+      "score": 54.5,
+      "price": 4,
+      "speed": 80,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
+      "provider": "Anthropic",
+      "score": 54.2,
+      "price": 4,
+      "speed": 136,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-6.1 Terra (Max)",
+      "provider": "OpenAI",
+      "score": 51,
+      "price": 2,
+      "speed": 91,
+      "delta": "-"
+    },
+    {
+      "name": "Gemini 4 Argon (High)",
+      "provider": "Google",
+      "score": 50.4,
+      "price": 8,
+      "speed": 82,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Wonder Full (Max)",
+      "provider": "Meta",
+      "score": 49.7,
+      "price": 0,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "Claude Fable 5.1 (Xhigh, Default Fallback)",
+      "provider": "Anthropic",
+      "score": 49.7,
+      "price": 20,
+      "speed": 61,
+      "delta": "-"
+    },
+    {
+      "name": "Kimi K3.1 Pro",
+      "provider": "Kimi",
+      "score": 46,
+      "price": 4,
+      "speed": 35,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Wonder (Max)",
+      "provider": "Meta",
+      "score": 43.3,
+      "price": 8,
+      "speed": 190,
+      "delta": "-"
+    },
+    {
+      "name": "Muse Spark 1.3 (Max)",
+      "provider": "Meta",
+      "score": 36.4,
+      "price": 2,
+      "speed": null,
+      "delta": "-"
+    }
+  ],
+  "valueModels": [
+    {
+      "name": "Claude Haiku 5.5 (Max)",
+      "provider": "Anthropic",
+      "score": 181,
+      "price": 0.2,
+      "speed": 235,
+      "delta": "-"
+    },
+    {
+      "name": "MiMo-V2.6-Flash",
+      "provider": "Xiaomi",
+      "score": 152.6,
+      "price": 0.18,
+      "speed": 60,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-6 Luna (Max)",
+      "provider": "OpenAI",
+      "score": 139,
+      "price": 0.2,
+      "speed": 116,
+      "delta": "-"
+    },
+    {
+      "name": "MiniMax-M3.1-Flash",
+      "provider": "MiniMax",
+      "score": 110.3,
+      "price": 0.26,
+      "speed": 111,
+      "delta": "-"
+    },
+    {
+      "name": "Ling 3.1 Flash 1019",
+      "provider": "InclusionAI",
+      "score": 65.6,
+      "price": 0.45,
+      "speed": null,
+      "delta": "-"
+    },
+    {
+      "name": "DeepSeek V4.1 Flash 1017 (Max)",
+      "provider": "DeepSeek",
+      "score": 61.9,
+      "price": 0.53,
+      "speed": 164,
+      "delta": "-"
+    },
+    {
+      "name": "MiMo-V2.6-Pro",
+      "provider": "Xiaomi",
+      "score": 55,
+      "price": 0.54,
+      "speed": 49,
+      "delta": "-"
+    },
+    {
+      "name": "Nemotron 3.5 Super VL",
+      "provider": "NVIDIA",
+      "score": 43.5,
+      "price": 0.31,
+      "speed": 418,
+      "delta": "-"
+    },
+    {
+      "name": "MiniMax-M3",
+      "provider": "MiniMax",
+      "score": 35.6,
+      "price": 0.53,
+      "speed": 103,
+      "delta": "-"
+    },
+    {
+      "name": "Beam 1.0",
+      "provider": "Reflection",
+      "score": 29.5,
+      "price": 0.6,
+      "speed": 365,
+      "delta": "-"
+    },
+    {
+      "name": "GPT-6.1 Terra (Max)",
+      "provider": "OpenAI",
+      "score": 25.5,
+      "price": 2,
+      "speed": 91,
+      "delta": "-"
+    },
+    {
+      "name": "Inkling Small",
+      "provider": "Thinking Machines",
+      "score": 24.6,
+      "price": 0.53,
+      "speed": 236,
+      "delta": "-"
+    }
+  ],
+  "comparative": {
+    "anthropic": {
+      "name": "Claude Opus 5.5 (Max, Default Fallback)",
+      "metrics": {
+        "intelligence": 58,
+        "coding": "N/A",
+        "speed": 96,
+        "price": 8
+      }
+    },
+    "google": {
+      "name": "Gemini 4 Carbon (High)",
+      "metrics": {
+        "intelligence": 59,
+        "coding": "N/A",
+        "speed": 106,
+        "price": 8
+      }
+    },
+    "openSource": {
+      "name": "Muse Wonder Full (Max)",
+      "metrics": {
+        "intelligence": 50,
+        "coding": "N/A",
+        "speed": "N/A",
+        "price": "N/A"
+      }
+    }
+  },
+  "geminiAnalysis": {
+    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
+    "recommendations": "Error al generar recomendaciones."
+  }
+}
