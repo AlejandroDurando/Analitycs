@@ -1,13 +1,9 @@
 {
-  "lastUpdated": "2026-10-28T18:44:59.974Z",
+  "lastUpdated": "2026-10-29T18:54:24.643Z",
   "kpis": {
     "bestCodingModel": {
-      "name": "Claude Fable 5.1 (Max, Default Fallback)",
-      "provider": "Anthropic",
-      "score": 81.6,
-      "price": 20,
-      "speed": 68,
-      "delta": "-"
+      "name": "N/A",
+      "score": 0
     },
     "bestImageModel": {
       "name": "GPT Image 2.5 Sunburst (max)",
@@ -22,109 +18,12 @@
       "provider": "Anthropic",
       "score": 181,
       "price": 0.2,
-      "speed": 235,
+      "speed": 237,
       "delta": "-"
     },
-    "newModelsThisWeek": 31
+    "newModelsThisWeek": 28
   },
-  "codingModels": [
-    {
-      "name": "Claude Fable 5.1 (Max, Default Fallback)",
-      "provider": "Anthropic",
-      "score": 81.6,
-      "price": 20,
-      "speed": 68,
-      "delta": "-"
-    },
-    {
-      "name": "GPT-5.6 Sol (Xhigh)",
-      "provider": "OpenAI",
-      "score": 78.3,
-      "price": 8,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "Claude Opus 5 (Max)",
-      "provider": "Anthropic",
-      "score": 78,
-      "price": 10,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "GPT-6 Astra (High)",
-      "provider": "OpenAI",
-      "score": 77.1,
-      "price": 20,
-      "speed": 56,
-      "delta": "-"
-    },
-    {
-      "name": "Grok 4.6 (High)",
-      "provider": "SpaceXAI",
-      "score": 76.8,
-      "price": 3,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "GPT-5.6 Terra (Max)",
-      "provider": "OpenAI",
-      "score": 76.7,
-      "price": 4.5,
-      "speed": 129,
-      "delta": "-"
-    },
-    {
-      "name": "Muse Spark 1.3 (Xhigh)",
-      "provider": "Meta",
-      "score": 76.5,
-      "price": 2,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
-      "provider": "Anthropic",
-      "score": 76.5,
-      "price": 20,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "Gemini 3.8 Flash (High)",
-      "provider": "Google",
-      "score": 76.3,
-      "price": 1.5,
-      "speed": 137,
-      "delta": "-"
-    },
-    {
-      "name": "Qwen3.8 Max (0902)",
-      "provider": "Alibaba",
-      "score": 76.2,
-      "price": 3,
-      "speed": 40,
-      "delta": "-"
-    },
-    {
-      "name": "Kimi K3 (Max)",
-      "provider": "Kimi",
-      "score": 76.2,
-      "price": 6,
-      "speed": null,
-      "delta": "-"
-    },
-    {
-      "name": "Gemini 3.7 Flash (High)",
-      "provider": "Google",
-      "score": 76.1,
-      "price": 1.5,
-      "speed": null,
-      "delta": "-"
-    }
-  ],
+  "codingModels": [],
   "imageModels": [
     {
       "name": "GPT Image 2.5 Sunburst (max)",
@@ -229,7 +128,7 @@
       "provider": "Google",
       "score": 59.4,
       "price": 8,
-      "speed": 106,
+      "speed": 88,
       "delta": "-"
     },
     {
@@ -245,7 +144,7 @@
       "provider": "OpenAI",
       "score": 56.9,
       "price": 20,
-      "speed": 69,
+      "speed": 81,
       "delta": "-"
     },
     {
@@ -277,7 +176,7 @@
       "provider": "Google",
       "score": 50.4,
       "price": 8,
-      "speed": 82,
+      "speed": 80,
       "delta": "-"
     },
     {
@@ -293,7 +192,7 @@
       "provider": "Anthropic",
       "score": 49.7,
       "price": 20,
-      "speed": 61,
+      "speed": 63,
       "delta": "-"
     },
     {
@@ -301,7 +200,7 @@
       "provider": "Kimi",
       "score": 46,
       "price": 4,
-      "speed": 35,
+      "speed": 33,
       "delta": "-"
     },
     {
@@ -309,7 +208,7 @@
       "provider": "Meta",
       "score": 43.3,
       "price": 8,
-      "speed": 190,
+      "speed": 170,
       "delta": "-"
     },
     {
@@ -327,7 +226,7 @@
       "provider": "Anthropic",
       "score": 181,
       "price": 0.2,
-      "speed": 235,
+      "speed": 237,
       "delta": "-"
     },
     {
@@ -335,7 +234,7 @@
       "provider": "Xiaomi",
       "score": 152.6,
       "price": 0.18,
-      "speed": 60,
+      "speed": 50,
       "delta": "-"
     },
     {
@@ -343,7 +242,7 @@
       "provider": "OpenAI",
       "score": 139,
       "price": 0.2,
-      "speed": 116,
+      "speed": 115,
       "delta": "-"
     },
     {
@@ -367,7 +266,7 @@
       "provider": "DeepSeek",
       "score": 61.9,
       "price": 0.53,
-      "speed": 164,
+      "speed": 170,
       "delta": "-"
     },
     {
@@ -375,7 +274,7 @@
       "provider": "Xiaomi",
       "score": 55,
       "price": 0.54,
-      "speed": 49,
+      "speed": 48,
       "delta": "-"
     },
     {
@@ -383,7 +282,7 @@
       "provider": "NVIDIA",
       "score": 43.5,
       "price": 0.31,
-      "speed": 418,
+      "speed": 410,
       "delta": "-"
     },
     {
@@ -391,7 +290,7 @@
       "provider": "MiniMax",
       "score": 35.6,
       "price": 0.53,
-      "speed": 103,
+      "speed": 104,
       "delta": "-"
     },
     {
@@ -399,7 +298,7 @@
       "provider": "Reflection",
       "score": 29.5,
       "price": 0.6,
-      "speed": 365,
+      "speed": 312,
       "delta": "-"
     },
     {
@@ -411,11 +310,11 @@
       "delta": "-"
     },
     {
-      "name": "Inkling Small",
-      "provider": "Thinking Machines",
-      "score": 24.6,
-      "price": 0.53,
-      "speed": 236,
+      "name": "Mistral Large 4 (High)",
+      "provider": "Mistral",
+      "score": 24.8,
+      "price": 1.05,
+      "speed": 169,
       "delta": "-"
     }
   ],
@@ -434,7 +333,7 @@
       "metrics": {
         "intelligence": 59,
         "coding": "N/A",
-        "speed": 106,
+        "speed": 88,
         "price": 8
       }
     },
