@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T18:31:17.140Z",
+  "lastUpdated": "2026-10-31T17:36:40.970Z",
   "kpis": {
     "bestCodingModel": {
       "name": "N/A",
@@ -18,10 +18,10 @@
       "provider": "Anthropic",
       "score": 181,
       "price": 0.2,
-      "speed": 235,
+      "speed": 237,
       "delta": "-"
     },
-    "newModelsThisWeek": 28
+    "newModelsThisWeek": 27
   },
   "codingModels": [],
   "imageModels": [
@@ -136,7 +136,7 @@
       "provider": "Anthropic",
       "score": 58.4,
       "price": 8,
-      "speed": 98,
+      "speed": 97,
       "delta": "-"
     },
     {
@@ -144,7 +144,7 @@
       "provider": "OpenAI",
       "score": 56.9,
       "price": 20,
-      "speed": 88,
+      "speed": 81,
       "delta": "-"
     },
     {
@@ -152,7 +152,7 @@
       "provider": "OpenAI",
       "score": 54.5,
       "price": 4,
-      "speed": 84,
+      "speed": 77,
       "delta": "-"
     },
     {
@@ -160,7 +160,7 @@
       "provider": "Anthropic",
       "score": 54.2,
       "price": 4,
-      "speed": 135,
+      "speed": 137,
       "delta": "-"
     },
     {
@@ -168,7 +168,7 @@
       "provider": "OpenAI",
       "score": 51,
       "price": 2,
-      "speed": 91,
+      "speed": 109,
       "delta": "-"
     },
     {
@@ -192,7 +192,7 @@
       "provider": "Anthropic",
       "score": 49.7,
       "price": 20,
-      "speed": 62,
+      "speed": 57,
       "delta": "-"
     },
     {
@@ -208,7 +208,7 @@
       "provider": "Meta",
       "score": 43.3,
       "price": 8,
-      "speed": 150,
+      "speed": 143,
       "delta": "-"
     },
     {
@@ -226,7 +226,7 @@
       "provider": "Anthropic",
       "score": 181,
       "price": 0.2,
-      "speed": 235,
+      "speed": 237,
       "delta": "-"
     },
     {
@@ -234,7 +234,7 @@
       "provider": "Xiaomi",
       "score": 152.6,
       "price": 0.18,
-      "speed": 45,
+      "speed": 42,
       "delta": "-"
     },
     {
@@ -242,7 +242,7 @@
       "provider": "OpenAI",
       "score": 139,
       "price": 0.2,
-      "speed": 116,
+      "speed": 120,
       "delta": "-"
     },
     {
@@ -250,7 +250,7 @@
       "provider": "Z AI",
       "score": 117.3,
       "price": 0.24,
-      "speed": 66,
+      "speed": 68,
       "delta": "-"
     },
     {
@@ -282,7 +282,7 @@
       "provider": "NVIDIA",
       "score": 57.9,
       "price": 0.1,
-      "speed": 278,
+      "speed": 279,
       "delta": "-"
     },
     {
@@ -290,15 +290,15 @@
       "provider": "Xiaomi",
       "score": 55,
       "price": 0.54,
-      "speed": 42,
+      "speed": 41,
       "delta": "-"
     },
     {
       "name": "Nemotron 3.5 Super VL",
       "provider": "NVIDIA",
-      "score": 43.5,
-      "price": 0.31,
-      "speed": 417,
+      "score": 49.5,
+      "price": 0.28,
+      "speed": 455,
       "delta": "-"
     },
     {
@@ -306,7 +306,7 @@
       "provider": "MiniMax",
       "score": 35.6,
       "price": 0.53,
-      "speed": 110,
+      "speed": 121,
       "delta": "-"
     },
     {
@@ -314,7 +314,7 @@
       "provider": "Reflection",
       "score": 29.5,
       "price": 0.6,
-      "speed": 299,
+      "speed": 323,
       "delta": "-"
     }
   ],
@@ -324,7 +324,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 98,
+        "speed": 97,
         "price": 8
       }
     },
@@ -348,7 +348,7 @@
     }
   },
   "geminiAnalysis": {
-    "trends": "El mercado muestra un claro dominio de OpenAI en la generación de imágenes, liderado por la familia GPT Image 2.5 (Sunburst y Flare), que copa las posiciones más altas de rendimiento visual. Se observa un fuerte dinamismo con 28 nuevos modelos introducidos esta semana, reflejando una rápida iteración competitiva. En contraste, la categoría de programación no presenta datos consolidados hoy, mientras que Anthropic refuerza su ventaja en eficiencia operativa con Claude Haiku 5.5, estableciendo la pauta en velocidad y costes reducidos.",
-    "recommendations": "Programación: Ante la falta de datos actualizados hoy, mantenga el uso de modelos base consolidados hasta la próxima calibración de métricas.\nImagen: GPT Image 2.5 Sunburst (max) de OpenAI es la referencia absoluta para proyectos que exijan la mayor calidad visual.\nCalidad-Precio: Claude Haiku 5.5 (Max) de Anthropic es la opción óptima para escalar operaciones rápidamente gracias a su velocidad (235) y bajo precio ($0.2)."
+    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
+    "recommendations": "Error al generar recomendaciones."
   }
 }
