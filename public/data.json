@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T17:36:40.970Z",
+  "lastUpdated": "2026-11-01T18:21:02.731Z",
   "kpis": {
     "bestCodingModel": {
       "name": "N/A",
@@ -128,7 +128,7 @@
       "provider": "Google",
       "score": 59.4,
       "price": 8,
-      "speed": 88,
+      "speed": 90,
       "delta": "-"
     },
     {
@@ -136,7 +136,7 @@
       "provider": "Anthropic",
       "score": 58.4,
       "price": 8,
-      "speed": 97,
+      "speed": 98,
       "delta": "-"
     },
     {
@@ -144,7 +144,7 @@
       "provider": "OpenAI",
       "score": 56.9,
       "price": 20,
-      "speed": 81,
+      "speed": 77,
       "delta": "-"
     },
     {
@@ -152,7 +152,7 @@
       "provider": "OpenAI",
       "score": 54.5,
       "price": 4,
-      "speed": 77,
+      "speed": 75,
       "delta": "-"
     },
     {
@@ -160,7 +160,7 @@
       "provider": "Anthropic",
       "score": 54.2,
       "price": 4,
-      "speed": 137,
+      "speed": 135,
       "delta": "-"
     },
     {
@@ -168,7 +168,7 @@
       "provider": "OpenAI",
       "score": 51,
       "price": 2,
-      "speed": 109,
+      "speed": 121,
       "delta": "-"
     },
     {
@@ -176,7 +176,7 @@
       "provider": "Google",
       "score": 50.4,
       "price": 8,
-      "speed": 80,
+      "speed": 81,
       "delta": "-"
     },
     {
@@ -192,7 +192,7 @@
       "provider": "Anthropic",
       "score": 49.7,
       "price": 20,
-      "speed": 57,
+      "speed": 56,
       "delta": "-"
     },
     {
@@ -200,7 +200,7 @@
       "provider": "Kimi",
       "score": 46,
       "price": 4,
-      "speed": 29,
+      "speed": 28,
       "delta": "-"
     },
     {
@@ -208,7 +208,7 @@
       "provider": "Meta",
       "score": 43.3,
       "price": 8,
-      "speed": 143,
+      "speed": 156,
       "delta": "-"
     },
     {
@@ -234,7 +234,7 @@
       "provider": "Xiaomi",
       "score": 152.6,
       "price": 0.18,
-      "speed": 42,
+      "speed": 40,
       "delta": "-"
     },
     {
@@ -242,7 +242,7 @@
       "provider": "OpenAI",
       "score": 139,
       "price": 0.2,
-      "speed": 120,
+      "speed": 123,
       "delta": "-"
     },
     {
@@ -250,7 +250,7 @@
       "provider": "Z AI",
       "score": 117.3,
       "price": 0.24,
-      "speed": 68,
+      "speed": 70,
       "delta": "-"
     },
     {
@@ -258,7 +258,7 @@
       "provider": "MiniMax",
       "score": 110.3,
       "price": 0.26,
-      "speed": 111,
+      "speed": 116,
       "delta": "-"
     },
     {
@@ -274,7 +274,7 @@
       "provider": "DeepSeek",
       "score": 61.9,
       "price": 0.53,
-      "speed": 159,
+      "speed": 157,
       "delta": "-"
     },
     {
@@ -282,7 +282,7 @@
       "provider": "NVIDIA",
       "score": 57.9,
       "price": 0.1,
-      "speed": 279,
+      "speed": 289,
       "delta": "-"
     },
     {
@@ -290,7 +290,7 @@
       "provider": "Xiaomi",
       "score": 55,
       "price": 0.54,
-      "speed": 41,
+      "speed": 40,
       "delta": "-"
     },
     {
@@ -298,7 +298,7 @@
       "provider": "NVIDIA",
       "score": 49.5,
       "price": 0.28,
-      "speed": 455,
+      "speed": 457,
       "delta": "-"
     },
     {
@@ -306,7 +306,7 @@
       "provider": "MiniMax",
       "score": 35.6,
       "price": 0.53,
-      "speed": 121,
+      "speed": 115,
       "delta": "-"
     },
     {
@@ -314,7 +314,7 @@
       "provider": "Reflection",
       "score": 29.5,
       "price": 0.6,
-      "speed": 323,
+      "speed": 349,
       "delta": "-"
     }
   ],
@@ -324,7 +324,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 97,
+        "speed": 98,
         "price": 8
       }
     },
@@ -333,7 +333,7 @@
       "metrics": {
         "intelligence": 59,
         "coding": "N/A",
-        "speed": 88,
+        "speed": 90,
         "price": 8
       }
     },
