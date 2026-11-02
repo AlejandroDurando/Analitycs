@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-01T18:21:02.731Z",
+  "lastUpdated": "2026-11-02T22:16:33.872Z",
   "kpis": {
     "bestCodingModel": {
       "name": "N/A",
@@ -18,10 +18,10 @@
       "provider": "Anthropic",
       "score": 181,
       "price": 0.2,
-      "speed": 237,
+      "speed": 232,
       "delta": "-"
     },
-    "newModelsThisWeek": 27
+    "newModelsThisWeek": 30
   },
   "codingModels": [],
   "imageModels": [
@@ -44,7 +44,7 @@
     {
       "name": "GPT Image 2 (high)",
       "provider": "OpenAI",
-      "score": 1186,
+      "score": 1187,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -58,16 +58,16 @@
       "delta": "-"
     },
     {
-      "name": "MAI-Image-2.6",
-      "provider": "Microsoft AI",
+      "name": "Grok Imagine Image 2.0",
+      "provider": "SpaceXAI",
       "score": 1166,
       "price": null,
       "speed": null,
       "delta": "-"
     },
     {
-      "name": "Grok Imagine Image 2.0",
-      "provider": "SpaceXAI",
+      "name": "MAI-Image-2.6",
+      "provider": "Microsoft AI",
       "score": 1166,
       "price": null,
       "speed": null,
@@ -92,7 +92,7 @@
     {
       "name": "GPT Image 1.5 (high)",
       "provider": "OpenAI",
-      "score": 1123,
+      "score": 1122,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -128,7 +128,7 @@
       "provider": "Google",
       "score": 59.4,
       "price": 8,
-      "speed": 90,
+      "speed": 91,
       "delta": "-"
     },
     {
@@ -136,7 +136,7 @@
       "provider": "Anthropic",
       "score": 58.4,
       "price": 8,
-      "speed": 98,
+      "speed": 96,
       "delta": "-"
     },
     {
@@ -144,7 +144,7 @@
       "provider": "OpenAI",
       "score": 56.9,
       "price": 20,
-      "speed": 77,
+      "speed": 66,
       "delta": "-"
     },
     {
@@ -152,7 +152,7 @@
       "provider": "OpenAI",
       "score": 54.5,
       "price": 4,
-      "speed": 75,
+      "speed": 80,
       "delta": "-"
     },
     {
@@ -160,7 +160,7 @@
       "provider": "Anthropic",
       "score": 54.2,
       "price": 4,
-      "speed": 135,
+      "speed": 134,
       "delta": "-"
     },
     {
@@ -168,7 +168,7 @@
       "provider": "OpenAI",
       "score": 51,
       "price": 2,
-      "speed": 121,
+      "speed": 106,
       "delta": "-"
     },
     {
@@ -176,7 +176,7 @@
       "provider": "Google",
       "score": 50.4,
       "price": 8,
-      "speed": 81,
+      "speed": 82,
       "delta": "-"
     },
     {
@@ -208,7 +208,7 @@
       "provider": "Meta",
       "score": 43.3,
       "price": 8,
-      "speed": 156,
+      "speed": 160,
       "delta": "-"
     },
     {
@@ -226,7 +226,7 @@
       "provider": "Anthropic",
       "score": 181,
       "price": 0.2,
-      "speed": 237,
+      "speed": 232,
       "delta": "-"
     },
     {
@@ -234,7 +234,7 @@
       "provider": "Xiaomi",
       "score": 152.6,
       "price": 0.18,
-      "speed": 40,
+      "speed": 34,
       "delta": "-"
     },
     {
@@ -242,7 +242,7 @@
       "provider": "OpenAI",
       "score": 139,
       "price": 0.2,
-      "speed": 123,
+      "speed": 134,
       "delta": "-"
     },
     {
@@ -250,7 +250,7 @@
       "provider": "Z AI",
       "score": 117.3,
       "price": 0.24,
-      "speed": 70,
+      "speed": 66,
       "delta": "-"
     },
     {
@@ -258,7 +258,7 @@
       "provider": "MiniMax",
       "score": 110.3,
       "price": 0.26,
-      "speed": 116,
+      "speed": 118,
       "delta": "-"
     },
     {
@@ -282,7 +282,7 @@
       "provider": "NVIDIA",
       "score": 57.9,
       "price": 0.1,
-      "speed": 289,
+      "speed": 281,
       "delta": "-"
     },
     {
@@ -290,7 +290,7 @@
       "provider": "Xiaomi",
       "score": 55,
       "price": 0.54,
-      "speed": 40,
+      "speed": 39,
       "delta": "-"
     },
     {
@@ -298,7 +298,15 @@
       "provider": "NVIDIA",
       "score": 49.5,
       "price": 0.28,
-      "speed": 457,
+      "speed": 459,
+      "delta": "-"
+    },
+    {
+      "name": "Granite 4.2 8B",
+      "provider": "IBM",
+      "score": 47.7,
+      "price": 0.11,
+      "speed": 72,
       "delta": "-"
     },
     {
@@ -306,15 +314,7 @@
       "provider": "MiniMax",
       "score": 35.6,
       "price": 0.53,
-      "speed": 115,
-      "delta": "-"
-    },
-    {
-      "name": "Beam 1.0",
-      "provider": "Reflection",
-      "score": 29.5,
-      "price": 0.6,
-      "speed": 349,
+      "speed": 113,
       "delta": "-"
     }
   ],
@@ -324,7 +324,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 98,
+        "speed": 96,
         "price": 8
       }
     },
@@ -333,7 +333,7 @@
       "metrics": {
         "intelligence": 59,
         "coding": "N/A",
-        "speed": 90,
+        "speed": 91,
         "price": 8
       }
     },
