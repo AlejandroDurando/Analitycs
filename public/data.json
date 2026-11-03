@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T22:16:33.872Z",
+  "lastUpdated": "2026-11-03T20:01:41.780Z",
   "kpis": {
     "bestCodingModel": {
       "name": "N/A",
@@ -8,7 +8,7 @@
     "bestImageModel": {
       "name": "GPT Image 2.5 Sunburst (max)",
       "provider": "OpenAI",
-      "score": 1222,
+      "score": 1223,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -18,17 +18,17 @@
       "provider": "Anthropic",
       "score": 181,
       "price": 0.2,
-      "speed": 232,
+      "speed": 235,
       "delta": "-"
     },
-    "newModelsThisWeek": 30
+    "newModelsThisWeek": 31
   },
   "codingModels": [],
   "imageModels": [
     {
       "name": "GPT Image 2.5 Sunburst (max)",
       "provider": "OpenAI",
-      "score": 1222,
+      "score": 1223,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -44,7 +44,7 @@
     {
       "name": "GPT Image 2 (high)",
       "provider": "OpenAI",
-      "score": 1187,
+      "score": 1189,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -60,7 +60,7 @@
     {
       "name": "Grok Imagine Image 2.0",
       "provider": "SpaceXAI",
-      "score": 1166,
+      "score": 1168,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -68,7 +68,7 @@
     {
       "name": "MAI-Image-2.6",
       "provider": "Microsoft AI",
-      "score": 1166,
+      "score": 1167,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -92,7 +92,7 @@
     {
       "name": "GPT Image 1.5 (high)",
       "provider": "OpenAI",
-      "score": 1122,
+      "score": 1123,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -100,15 +100,15 @@
     {
       "name": "MAI-Image-2.6-Flash",
       "provider": "Microsoft AI",
-      "score": 1119,
+      "score": 1120,
       "price": null,
       "speed": null,
       "delta": "-"
     },
     {
-      "name": "Nano Banana Pro (Gemini 3 Pro Image)",
-      "provider": "Google",
-      "score": 1118,
+      "name": "FLUX 3 Image",
+      "provider": "Black Forest Labs",
+      "score": 1119,
       "price": null,
       "speed": null,
       "delta": "-"
@@ -136,7 +136,7 @@
       "provider": "Anthropic",
       "score": 58.4,
       "price": 8,
-      "speed": 96,
+      "speed": 98,
       "delta": "-"
     },
     {
@@ -144,7 +144,7 @@
       "provider": "OpenAI",
       "score": 56.9,
       "price": 20,
-      "speed": 66,
+      "speed": 61,
       "delta": "-"
     },
     {
@@ -152,7 +152,7 @@
       "provider": "OpenAI",
       "score": 54.5,
       "price": 4,
-      "speed": 80,
+      "speed": 68,
       "delta": "-"
     },
     {
@@ -160,7 +160,7 @@
       "provider": "Anthropic",
       "score": 54.2,
       "price": 4,
-      "speed": 134,
+      "speed": 133,
       "delta": "-"
     },
     {
@@ -168,7 +168,7 @@
       "provider": "OpenAI",
       "score": 51,
       "price": 2,
-      "speed": 106,
+      "speed": 117,
       "delta": "-"
     },
     {
@@ -176,7 +176,7 @@
       "provider": "Google",
       "score": 50.4,
       "price": 8,
-      "speed": 82,
+      "speed": 83,
       "delta": "-"
     },
     {
@@ -192,7 +192,7 @@
       "provider": "Anthropic",
       "score": 49.7,
       "price": 20,
-      "speed": 56,
+      "speed": 55,
       "delta": "-"
     },
     {
@@ -208,7 +208,7 @@
       "provider": "Meta",
       "score": 43.3,
       "price": 8,
-      "speed": 160,
+      "speed": 137,
       "delta": "-"
     },
     {
@@ -226,7 +226,7 @@
       "provider": "Anthropic",
       "score": 181,
       "price": 0.2,
-      "speed": 232,
+      "speed": 235,
       "delta": "-"
     },
     {
@@ -234,7 +234,7 @@
       "provider": "Xiaomi",
       "score": 152.6,
       "price": 0.18,
-      "speed": 34,
+      "speed": 31,
       "delta": "-"
     },
     {
@@ -242,7 +242,7 @@
       "provider": "OpenAI",
       "score": 139,
       "price": 0.2,
-      "speed": 134,
+      "speed": 123,
       "delta": "-"
     },
     {
@@ -250,7 +250,7 @@
       "provider": "Z AI",
       "score": 117.3,
       "price": 0.24,
-      "speed": 66,
+      "speed": 63,
       "delta": "-"
     },
     {
@@ -258,7 +258,7 @@
       "provider": "MiniMax",
       "score": 110.3,
       "price": 0.26,
-      "speed": 118,
+      "speed": 116,
       "delta": "-"
     },
     {
@@ -282,7 +282,7 @@
       "provider": "NVIDIA",
       "score": 57.9,
       "price": 0.1,
-      "speed": 281,
+      "speed": 276,
       "delta": "-"
     },
     {
@@ -298,7 +298,7 @@
       "provider": "NVIDIA",
       "score": 49.5,
       "price": 0.28,
-      "speed": 459,
+      "speed": 434,
       "delta": "-"
     },
     {
@@ -306,7 +306,7 @@
       "provider": "IBM",
       "score": 47.7,
       "price": 0.11,
-      "speed": 72,
+      "speed": 57,
       "delta": "-"
     },
     {
@@ -314,7 +314,7 @@
       "provider": "MiniMax",
       "score": 35.6,
       "price": 0.53,
-      "speed": 113,
+      "speed": 108,
       "delta": "-"
     }
   ],
@@ -324,7 +324,7 @@
       "metrics": {
         "intelligence": 58,
         "coding": "N/A",
-        "speed": 96,
+        "speed": 98,
         "price": 8
       }
     },
