@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T21:17:42.642Z",
+  "lastUpdated": "2026-11-19T21:19:33.794Z",
   "kpis": {
     "bestCodingModel": {
       "name": "N/A",
@@ -348,7 +348,7 @@
     }
   },
   "geminiAnalysis": {
-    "trends": "Esta semana registra una notable aceleración con 31 modelos nuevos ingresando al ecosistema. En generación visual, OpenAI impone un dominio absoluto copando el podio con la serie GPT Image 2.5, donde Sunburst lidera con 1223 puntos, fijando un nuevo estándar de fidelidad. Por otro lado, la ausencia de métricas destacadas hoy en programación refleja una pausa transitoria en evaluación de código. Mientras tanto, Anthropic capitaliza la demanda de eficiencia con Claude Haiku 5.5 (Max), ofreciendo un rendimiento excepcional a 236 tokens por segundo por apenas 0.2, confirmando que la competencia actual prioriza tanto la calidad de imagen como la optimización extrema de costes en producción.",
-    "recommendations": "Programación: Ante la falta de nuevos datos hoy, se recomienda mantener los modelos líderes estándar del mercado previo en producción.\nImagen: GPT Image 2.5 Sunburst (max) de OpenAI es la recomendación prioritaria para proyectos que exijan máxima calidad y coherencia visual.\nCalidad-Precio: Claude Haiku 5.5 (Max) de Anthropic es la mejor opción para cargas de trabajo masivas gracias a su insuperable velocidad y coste mínimo."
+    "trends": "El mercado muestra un dominio contundente de OpenAI en la generación visual con la familia GPT Image 2.5, destacando Sunburst (1223 puntos) y Flare como nuevos referentes de calidad. En el frente de eficiencia, Anthropic mantiene su hegemonía con Claude Haiku 5.5 (Max), ofreciendo una velocidad de 236 tokens/s a un coste ultra competitivo de 0.2. La incorporación de 31 nuevos modelos esta semana refleja una acelerada rotación competitiva, aunque la falta temporal de métricas en programación sugiere una pausa o reajuste en los benchmarks de código.",
+    "recommendations": "Programación: Mantener temporalmente implementaciones existentes y consolidadas (como Claude Sonnet o GPT-4o) hasta actualizar las métricas del sector.\nImagen: Desplegar GPT Image 2.5 Sunburst (max) de OpenAI para proyectos que demanden la máxima fidelidad y calidad visual disponible.\nCalidad-Precio: Integrar Claude Haiku 5.5 (Max) de Anthropic para cargas de trabajo a gran escala que prioricen alta velocidad y bajo coste."
   }
 }
