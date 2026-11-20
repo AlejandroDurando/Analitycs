@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T21:19:33.794Z",
+  "lastUpdated": "2026-11-20T20:59:16.868Z",
   "kpis": {
     "bestCodingModel": {
       "name": "N/A",
@@ -348,7 +348,7 @@
     }
   },
   "geminiAnalysis": {
-    "trends": "El mercado muestra un dominio contundente de OpenAI en la generación visual con la familia GPT Image 2.5, destacando Sunburst (1223 puntos) y Flare como nuevos referentes de calidad. En el frente de eficiencia, Anthropic mantiene su hegemonía con Claude Haiku 5.5 (Max), ofreciendo una velocidad de 236 tokens/s a un coste ultra competitivo de 0.2. La incorporación de 31 nuevos modelos esta semana refleja una acelerada rotación competitiva, aunque la falta temporal de métricas en programación sugiere una pausa o reajuste en los benchmarks de código.",
-    "recommendations": "Programación: Mantener temporalmente implementaciones existentes y consolidadas (como Claude Sonnet o GPT-4o) hasta actualizar las métricas del sector.\nImagen: Desplegar GPT Image 2.5 Sunburst (max) de OpenAI para proyectos que demanden la máxima fidelidad y calidad visual disponible.\nCalidad-Precio: Integrar Claude Haiku 5.5 (Max) de Anthropic para cargas de trabajo a gran escala que prioricen alta velocidad y bajo coste."
+    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
+    "recommendations": "Error al generar recomendaciones."
   }
 }
