@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T22:58:06.998Z",
+  "lastUpdated": "2026-11-25T22:20:19.226Z",
   "kpis": {
     "bestCodingModel": {
       "name": "N/A",
@@ -348,7 +348,7 @@
     }
   },
   "geminiAnalysis": {
-    "trends": "El mercado de modelos fundacionales acelera con 31 nuevos lanzamientos esta semana. OpenAI consolida un dominio absoluto en síntesis visual con su familia GPT Image 2.5 (Sunburst y Flare copando las mejores puntuaciones), elevando la barra de fidelidad multimodal. Por otro lado, la ausencia temporal de registros consolidados en programación refleja una etapa de transición o reevaluación de benchmarks técnicos. Finalmente, Anthropic refuerza el segmento de alta eficiencia con Claude Haiku 5.5 (Max), posicionándose como el referente indiscutible en velocidad y economía para arquitecturas de producción a gran escala.",
-    "recommendations": "Programación: Mantener cautela y evaluar modelos consolidados mientras se normalizan los benchmarks del segmento técnico.\nImagen: Elegir GPT Image 2.5 Sunburst (max) para proyectos que exijan la mayor calidad visual y coherencia estética actual.\nCalidad-Precio: Integrar Claude Haiku 5.5 (Max) para optimizar costos y latencia sin sacrificar capacidades analíticas."
+    "trends": "Hubo un error al generar el análisis con Gemini hoy. Revisa los logs de la Action.",
+    "recommendations": "Error al generar recomendaciones."
   }
 }
